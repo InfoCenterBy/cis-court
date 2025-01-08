@@ -1,0 +1,9 @@
+@use "./normalize";
+@use "./variables";
+@use "./components";
+@use "./utilities";
+@use "./header";
+
+body {
+  background-color: var(--blue-light);
+}
