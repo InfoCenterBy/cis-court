@@ -1,31 +1,40 @@
 .header {
-  background-color: var(--blue);
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
+
   padding-top: 16px;
-  // padding-bottom: 12px;
 
   &__search {
     position: relative;
+    max-width: 366px;
+    width: 100%;
 
-    & i {
+    & button {
       position: absolute;
       right: 14px;
-      top: 12px;
+      top: 10px;
       font-size: 20px;
+      background-color: transparent;
     }
   }
 }
 
 .header-dropdown {
   & .dropdown-toggle {
-    padding-bottom: 24px;
+    padding-bottom: 32px;
     padding-top: 12px;
     display: block;
     color: var(--white);
     text-transform: uppercase;
+    display: block;
+    font-weight: 500;
   }
 
   & .dropdown-menu {
-    margin-top: 0px;
+    margin-top: -3px;
     display: block;
     transition: all 0.15s linear;
     visibility: hidden;
@@ -33,7 +42,7 @@
     background-color: var(--blue);
     border-radius: 0;
     border: none;
-    border-top: 2px solid var(--blue-light);
+    border-top: 3px solid var(--blue-light);
 
     & .dropdown-item {
       color: var(--white);
@@ -63,16 +72,17 @@
 }
 
 .nav__item {
-  padding-bottom: 28px;
+  padding-bottom: 29px;
   padding-top: 12px;
   display: block;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
+  font-weight: 500;
 
   color: var(--white);
   text-transform: uppercase;
 
   &:hover {
     color: var(--blue-light);
-    border-bottom: 2px solid var(--blue-light);
+    border-bottom: 3px solid var(--blue-light);
   }
 }
