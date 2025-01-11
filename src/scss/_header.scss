@@ -4,7 +4,6 @@
   background-size: 100% 100%;
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: darken;
-
   padding-top: 16px;
 
   &__search {
@@ -43,6 +42,8 @@
     border-radius: 0;
     border: none;
     border-top: 3px solid var(--blue-light);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    padding-block: 0;
 
     & .dropdown-item {
       color: var(--white);

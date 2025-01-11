@@ -1,9 +1,34 @@
-@use "./normalize";
-@use "./variables";
-@use "./components";
-@use "./utilities";
-@use "./header";
+@use "normalize";
+@use "variables";
+@use "components";
+@use "utilities";
+@use "header";
+@use "banner";
+@use "court-news";
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--black);
+  height: 100%;
+}
 
 body {
-  background-color: var(--blue-light);
+  background-color: var(--gray);
+}
+
+.container {
+  max-width: 1464px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  flex: 1;
 }
