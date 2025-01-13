@@ -57,10 +57,7 @@ function browserSync(done) {
 }
 
 function html() {
-  return src(path.src.html)
-    .pipe(fileinclude())
-    .pipe(dest(path.build.html))
-    .pipe(browsersync.stream());
+  return src(path.src.html).pipe(fileinclude()).pipe(dest(path.build.html)).pipe(browsersync.stream());
 }
 
 function css() {
