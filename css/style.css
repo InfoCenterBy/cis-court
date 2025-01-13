@@ -857,7 +857,7 @@ h6 {
   transition: all 0.15s linear;
 }
 .link-with-chevron i:before {
-  vertical-align: -0.08em;
+  vertical-align: -0.01em;
 }
 .link-with-chevron:hover i {
   -webkit-transform: translateX(5px);
