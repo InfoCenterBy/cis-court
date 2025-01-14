@@ -5,6 +5,8 @@
 .news-card {
   display: flex;
   gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--gray);
 
   &:has(.news-card__text:hover) .news-card__img img {
     transform: scale(1.1);
@@ -13,7 +15,7 @@
   &__img {
     overflow: hidden;
     width: 200px;
-    height: 120px;
+    height: 117px;
     flex-shrink: 0;
 
     & img {
@@ -43,5 +45,48 @@
     &:hover ~ .d-flex .news-card__img img {
       transform: scale(1.1);
     }
+  }
+}
+
+.news-activity {
+  padding: 16px 16px 40px 16px;
+  background-color: var(--gray-light);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.15s linear;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+  &__icon {
+    width: 64px;
+    height: 64px;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.15s linear;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    transition: all 0.15s linear;
+  }
+
+  &:hover {
+    background-color: var(--blue);
+  }
+
+  &:hover .news-activity__icon {
+    background-color: var(--white);
+  }
+  &:hover .news-activity__icon svg path {
+    fill: var(--blue);
+  }
+
+  &:hover .news-activity__text {
+    color: var(--white);
   }
 }

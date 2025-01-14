@@ -1,0 +1,53 @@
+.news-tabs {
+  margin-top: 80px;
+}
+
+.nav-pills {
+  gap: 16px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--blue);
+  color: var(--white);
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.nav-pills .nav-link {
+  color: var(--blue);
+  text-transform: uppercase;
+  border-radius: 0;
+  font-weight: 500;
+  border: 1px solid var(--blue);
+}
+
+.useful-links {
+  padding: 24px;
+  background-color: var(--gray-light);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.useful-link {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: all 0.15s linear;
+
+  &:hover span {
+    color: var(--blue);
+  }
+}
+
+.useful-links-banner {
+  height: 260px;
+  width: 463px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
