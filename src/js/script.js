@@ -1,1 +1,1 @@
-console.log(123);
+@@include('slider-partners.js')

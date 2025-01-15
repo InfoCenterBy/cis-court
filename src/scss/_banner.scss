@@ -9,3 +9,16 @@
     object-position: center top;
   }
 }
+
+.banner-bottom {
+  margin-block: 80px;
+  height: 200px;
+  background-image: url("../img/banner-bottom.png");
+  padding-inline: 150px;
+
+  & span {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
