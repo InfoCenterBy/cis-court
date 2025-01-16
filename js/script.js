@@ -25,7 +25,7 @@ const swiperMainPartner = new Swiper(".swiper.slider-partner", {
     },
     1200: {
       slidesPerView: 4,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
   },
   navigation: {

@@ -399,6 +399,12 @@ h6 {
   margin: 0;
 }
 
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
 :root {
   --base-font: 16px;
   --black: #1d1d1d;
@@ -837,6 +843,15 @@ h6 {
   color: var(--blue-dark);
 }
 
+.link-white {
+  color: var(--white);
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+.link-white:hover {
+  color: var(--blue-light);
+}
+
 .link-with-chevron {
   position: relative;
   -webkit-transition: all 0.15s linear;
@@ -979,6 +994,23 @@ h6 {
 .nav__item:hover {
   color: var(--blue-light);
   border-bottom: 3px solid var(--blue-light);
+}
+
+.footer {
+  background-color: var(--blue);
+  color: #fff;
+  padding-block: 40px;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .banner {
@@ -1221,7 +1253,20 @@ h6 {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: var(--main);
+  color: var(--blue);
+}
+
+.swiper-button-prev {
+  left: -5px;
+}
+
+.swiper-button-next {
+  right: -5px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 30px;
 }
 
 @media (max-width: 768px) {
@@ -1275,7 +1320,7 @@ h6 {
 }
 
 .slider-partner {
-  padding-inline: 1px;
+  padding-inline: 28px;
 }
 
 .partner__card-body {
