@@ -15,6 +15,15 @@
   }
 }
 
+.link-white {
+  color: var(--white);
+  transition: all 0.15s linear;
+
+  &:hover {
+    color: var(--blue-light);
+  }
+}
+
 .link-with-chevron {
   position: relative;
   transition: all 0.15s linear;

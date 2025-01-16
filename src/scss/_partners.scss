@@ -30,7 +30,20 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: var(--main);
+  color: var(--blue);
+}
+
+.swiper-button-prev {
+  left: -5px;
+}
+
+.swiper-button-next {
+  right: -5px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 30px;
 }
 
 @media (max-width: 768px) {
@@ -80,7 +93,7 @@
 }
 
 .slider-partner {
-  padding-inline: 1px;
+  padding-inline: 28px;
 }
 
 .partner__card-body {
