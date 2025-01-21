@@ -2,10 +2,18 @@
   background-color: var(--blue);
   color: #fff;
   padding-block: 40px;
-}
+  padding-inline: 0;
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-block: 24px;
+  }
+
+  &__title {
+    font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem);
+    font-weight: 500;
+  }
 }
