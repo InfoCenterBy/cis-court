@@ -25,39 +25,239 @@
 
   </div>
   <div class="mobile-header__nav">
-    <ul class="d-flex flex-column gap-4 p-0 mb-0">
-      <li class="d-flex align-items-center justify-content-between">
-        <a href="#" class="mobile-header__nav-item">о суде</a>
-        <i class="bi bi-chevron-right color-white fs-24"></i>
-      </li>
-      <li>
-        <a href="#" class="mobile-header__nav-item">порядок обращений</a>
-      </li>
-      <li class="d-flex align-items-center justify-content-between">
-        <a href="#" class="mobile-header__nav-item">судебные дела</a>
-        <i class="bi bi-chevron-right color-white fs-24"></i>
-      </li>
-      <li class="d-flex align-items-center justify-content-between">
-        <a href="#" class="mobile-header__nav-item">пленум</a>
-        <i class="bi bi-chevron-right color-white fs-24"></i>
-      </li>
-      <li class="d-flex align-items-center justify-content-between">
-        <a href="#" class="mobile-header__nav-item">аналитика</a>
-        <i class="bi bi-chevron-right color-white fs-24"></i>
-      </li>
-      <li class="d-flex align-items-center justify-content-between">
-        <a href="#" class="mobile-header__nav-item">новости</a>
-        <i class="bi bi-chevron-right color-white fs-24"></i>
-      </li>
-      <li class="d-flex align-items-center justify-content-between">
-        <a href="#" class="mobile-header__nav-item">пресс-центр</a>
-        <i class="bi bi-chevron-right color-white fs-24"></i>
-      </li>
-      <li>
-        <a href="#" class="mobile-header__nav-item">контакты</a>
-      </li>
-    </ul>
-
-  </div>
-
+    <div class="mobile-header__accordion accordion" id="accordion">
+      <div class="mobile-header__accordion-item accordion-item">
+        <h2 class="mobile-header__accordion-header accordion-header">
+          <button class="mobile-header__accordion-button accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#accordion-body-1" aria-expanded="false"
+            aria-controls="accordion-body-1">
+            о суде
+          </button>
+        </h2>
+        <div id="accordion-body-1" class="accordion-collapse collapse">
+          <div class="mobile-header__accordion-body accordion-body">
+            <ul class="mobile-header__accordion-body-list">
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">О суде</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Компетенция</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="achievements.html">
+                  Правовая основа деятельности
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Реестр
+                  судей</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item"
+                  href="structure-and-managments.html">Председатель</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Аппарат</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">
+                  Научно-консультативный совет
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">История</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a class="color-white text-uppercase py-2" href="#">порядок обращения</a>
+      </div>
+      <div class="mobile-header__accordion-item accordion-item">
+        <h2 class="mobile-header__accordion-header accordion-header">
+          <button class="mobile-header__accordion-button accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#accordion-body-2" aria-expanded="false"
+            aria-controls="accordion-body-2">
+            судебные дела
+          </button>
+        </h2>
+        <div id="accordion-body-2" class="accordion-collapse collapse">
+          <div class="mobile-header__accordion-body accordion-body">
+            <ul class="mobile-header__accordion-body-list">
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Судебные дела
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Информация о судебных делах
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="achievements.html">
+                  Судебные акты
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Аннотации
+                  решений</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-header__accordion-item accordion-item">
+        <h2 class="mobile-header__accordion-header accordion-header">
+          <button class="mobile-header__accordion-button accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#accordion-body-3" aria-expanded="false"
+            aria-controls="accordion-body-3">
+            пленум
+          </button>
+        </h2>
+        <div id="accordion-body-3" class="accordion-collapse collapse">
+          <div class="mobile-header__accordion-body accordion-body">
+            <ul class="mobile-header__accordion-body-list">
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Пленум
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Информация о деятельности
+                  Пленума
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="achievements.html">
+                  Члены Пленума
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item"
+                  href="structure-and-managments.html">Постановления Пленума</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-header__accordion-item accordion-item">
+        <h2 class="mobile-header__accordion-header accordion-header">
+          <button class="mobile-header__accordion-button accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#accordion-body-4" aria-expanded="false"
+            aria-controls="accordion-body-4">
+            Аналитика
+          </button>
+        </h2>
+        <div id="accordion-body-4" class="accordion-collapse collapse">
+          <div class="mobile-header__accordion-body accordion-body">
+            <ul class="mobile-header__accordion-body-list">
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Аналитика
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Экспертно-аналитическая
+                  деятельность
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="achievements.html">
+                  Обзоры судебной практики
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Судебная
+                  статистика</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item"
+                  href="structure-and-managments.html">Справочно-статистическая информация</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Отчёты о
+                  деятельности</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-header__accordion-item accordion-item">
+        <h2 class="mobile-header__accordion-header accordion-header">
+          <button class="mobile-header__accordion-button accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#accordion-body-5" aria-expanded="false"
+            aria-controls="accordion-body-5">
+            новости
+          </button>
+        </h2>
+        <div id="accordion-body-5" class="accordion-collapse collapse">
+          <div class="mobile-header__accordion-body accordion-body">
+            <ul class="mobile-header__accordion-body-list">
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Новости
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Новости Суда
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="achievements.html">
+                  Новости Содружества
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Новости
+                  высших национальных судов</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Архив
+                  новостей</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-header__accordion-item accordion-item">
+        <h2 class="mobile-header__accordion-header accordion-header">
+          <button class="mobile-header__accordion-button accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#accordion-body-6" aria-expanded="false"
+            aria-controls="accordion-body-6">
+            Пресс-центр
+          </button>
+        </h2>
+        <div id="accordion-body-6" class="accordion-collapse collapse">
+          <div class="mobile-header__accordion-body accordion-body">
+            <ul class="mobile-header__accordion-body-list">
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Пресс-центр
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Издания
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="achievements.html">
+                  Публикации
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item"
+                  href="structure-and-managments.html">Международные конференции</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item"
+                  href="structure-and-managments.html">Информационные партнеры</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Каталог
+                  ссылок</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a class="color-white text-uppercase py-2" href="#">контакты</a>
+      </div>
+    </div>
 </header>
