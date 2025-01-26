@@ -1,19 +1,20 @@
 <section class="container news-tabs">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="commonwealth-news-tab" data-bs-toggle="pill"
+        data-bs-target="#commonwealth-news" type="button" role="tab" aria-controls="commonwealth-news"
+        aria-selected="true">новости содружества</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="highest-courts-news-tab" data-bs-toggle="pill"
+        data-bs-target="#highest-courts-news" type="button" role="tab" aria-controls="highest-courts-news"
+        aria-selected="false">новости высших
+        национальных судов</button>
+    </li>
+  </ul>
   <div class="row">
-    <div class="col-8">
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="commonwealth-news-tab" data-bs-toggle="pill"
-            data-bs-target="#commonwealth-news" type="button" role="tab" aria-controls="commonwealth-news"
-            aria-selected="true">новости содружества</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="highest-courts-news-tab" data-bs-toggle="pill"
-            data-bs-target="#highest-courts-news" type="button" role="tab" aria-controls="highest-courts-news"
-            aria-selected="false">новости высших
-            национальных судов</button>
-        </li>
-      </ul>
+    <div class="col-12 col-lg-8">
+
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="commonwealth-news" role="tabpanel"
           aria-labelledby="commonwealth-news-tab" tabindex="0">
@@ -236,7 +237,7 @@
         </div>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-12 col-lg-4">
       <h2 class="h2-title mb-4 mt-5">полезные ссылки</h2>
 
       <ul class="useful-links">
@@ -262,11 +263,11 @@
         </li>
       </ul>
 
-      <!-- <div class="useful-links-banner mt-4">
+      <div class="useful-links-banner mt-4">
         <a href="#">
           <img src="./img/useful-links-banner.png" alt="">
         </a>
-      </div> -->
+      </div>
 
     </div>
   </div>
