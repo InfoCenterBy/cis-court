@@ -920,6 +920,10 @@ ol {
   overflow: hidden;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .header {
   background-image: url("../img/header-bg.png");
   background-repeat: no-repeat;
@@ -1028,6 +1032,10 @@ ol {
   width: 56px;
   height: 56px;
 }
+.mobile-header__logo img {
+  width: 100%;
+  height: 100%;
+}
 
 .mobile-header__menu {
   width: 28px;
@@ -1049,6 +1057,32 @@ ol {
   gap: 8px;
   background-color: var(--main);
   border-radius: 50%;
+}
+
+.mobile-header__search-body {
+  display: none;
+  position: relative;
+}
+.mobile-header__search-body button {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.mobile-header__search-body.open {
+  display: block;
+}
+
+.mobile-header__search-close {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+}
+.mobile-header__search-close i {
+  font-size: 40px;
+  line-height: 1;
 }
 
 .menu-bar {
@@ -1173,7 +1207,16 @@ ol {
 
 @media (max-width: 992px) {
   .mobile-header {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
   }
 }
 .footer {
@@ -1231,9 +1274,6 @@ ol {
   }
 }
 @media (max-width: 768px) {
-  .banner {
-    display: none;
-  }
   .banner-bottom {
     height: 150px;
     padding-inline: 20px;

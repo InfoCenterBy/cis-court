@@ -176,10 +176,15 @@
   </div>
 </header>
     <header class="container mobile-header">
-  <div class="d-flex align-items-center justify-content-between gap-3 pb-4">
-    <a href="/"><img class="mobile-header__logo" src="./img/mobile-logo.png" alt="лого" /></a>
-    <div class="d-flex align-items-center gap-4">
-      <div class="mobile-header__search">
+  <div class="d-flex align-items-center justify-content-between gap-3 w-100">
+    <a class="mobile-header__logo" href="/"><img src="./img/mobile-logo.png" alt="лого" /></a>
+    <div class="mobile-header__content d-flex align-items-center gap-4">
+      <form class="mobile-header__search-body w-100">
+        <input class="mobile-header__search-input input" type="text" placeholder="Поиск">
+        <button type="button"><i class="bi bi-search"></i></button>
+      </form>
+
+      <div class="mobile-header__search-btn">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_237_1408)">
             <path
@@ -198,8 +203,10 @@
         <span class="menu-bar"></span>
         <span class="menu-bar"></span>
       </button>
+      <button class="mobile-header__search-close hidden">
+        <i class="bi bi-x color-white"></i>
+      </button>
     </div>
-
   </div>
   <div class="mobile-header__nav">
     <div class="mobile-header__accordion accordion" id="accordion">
@@ -439,9 +446,8 @@
     </div>
 </header>
     <main><section class="container banner">
-  <img src="../img/banner.png" alt="баннер" />
-</section>
- <section class="container court-news">
+  <img src="./img/banner.png" alt="баннер" />
+</section> <section class="container court-news">
   <div class="row">
     <div class="col-12 col-lg-9">
       <div class="d-flex justify-content-between align-items-center mb-4">
