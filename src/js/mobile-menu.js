@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".mobile-header__menu");
   const mobileNav = document.querySelector(".mobile-header__nav");
-  const mobileSearch = document.querySelector(".mobile-header__search");
-  const mobileSearchBtn = document.querySelector(".search-btn-mobile");
+  const mobileSearch = document.querySelector(".mobile-header__search-body");
+  const mobileSearchBtn = document.querySelector(".mobile-header__search-btn");
+  const mobileSearchCloseBtn = document.querySelector(
+    ".mobile-header__search-close",
+  );
+  const mobileSearchContent = document.querySelector(".mobile-header__content");
+  const mobileLogo = document.querySelector(".mobile-header__logo");
   const body = document.body;
 
   if (menuToggle) {
@@ -22,20 +27,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  if (mobileSearch) {
+  if (mobileSearchBtn) {
     mobileSearchBtn.addEventListener("click", function () {
-      mobileSearch.classList.toggle("open");
+      mobileSearch.classList.add("open");
+      mobileLogo.classList.add("hidden");
+      menuToggle.classList.add("hidden");
+      mobileSearchBtn.classList.add("hidden");
+      mobileSearchCloseBtn.classList.remove("hidden");
+      mobileSearchContent.classList.add("w-100");
+    });
+  }
 
-      if (mobileNav.classList.contains("open")) {
-        mobileNav.classList.remove("open");
-        menuToggle.classList.remove("open");
-      }
-
-      if (mobileSearch.classList.contains("open")) {
-        body.classList.add("no-scroll");
-      } else {
-        body.classList.remove("no-scroll");
-      }
+  if (mobileSearchCloseBtn) {
+    mobileSearchCloseBtn.addEventListener("click", function () {
+      mobileSearch.classList.remove("open");
+      mobileLogo.classList.remove("hidden");
+      menuToggle.classList.remove("hidden");
+      mobileSearchBtn.classList.remove("hidden");
+      mobileSearchCloseBtn.classList.add("hidden");
+      mobileSearchContent.classList.remove("w-100");
     });
   }
 });

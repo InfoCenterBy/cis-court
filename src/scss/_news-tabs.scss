@@ -55,12 +55,18 @@
 }
 
 .useful-links-banner {
+  margin-top: 24px;
   height: 260px;
   max-width: 463px;
   width: 100%;
 
+  @media (max-width: 992px) {
+    margin-top: 100px;
+  }
+
   @media (max-width: 576px) {
     max-width: 100%;
+    margin-top: 24px;
   }
 
   & img {
