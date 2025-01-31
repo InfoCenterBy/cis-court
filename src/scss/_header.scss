@@ -21,6 +21,11 @@
       background-color: transparent;
     }
   }
+
+  &__logo {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .header-dropdown {
@@ -52,13 +57,19 @@
     padding-block: 0;
 
     & .dropdown-item {
+      background-color: var(--blue);
       color: var(--white);
       padding: 8px;
     }
 
     & .dropdown-item:hover {
-      color: var(--blue-light);
-      background-color: var(--blue);
+      color: var(--blue);
+      background-color: var(--blue-light);
+    }
+
+    & .dropdown-item:active {
+      color: var(--white);
+      background-color: var(--blue-dark);
     }
   }
 }
