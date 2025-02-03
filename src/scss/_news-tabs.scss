@@ -27,6 +27,13 @@
   border-radius: 0;
 }
 
+.nav-pills .nav-link:not(.active) {
+  &:hover {
+    background-color: var(--blue-dark);
+    color: var(--white);
+  }
+}
+
 .nav-pills .nav-link {
   color: var(--blue);
   text-transform: uppercase;
@@ -52,6 +59,14 @@
   &:hover span {
     color: var(--blue);
   }
+
+  @media (max-width: 992px) {
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    align-items: flex-start;
+  }
 }
 
 .useful-links-banner {
@@ -60,8 +75,8 @@
   max-width: 463px;
   width: 100%;
 
-  @media (max-width: 992px) {
-    margin-top: 100px;
+  @media (max-width: 768px) {
+    margin-top: 24px;
   }
 
   @media (max-width: 576px) {
