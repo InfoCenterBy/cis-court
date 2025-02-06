@@ -1,3 +1,19 @@
+.h2-title {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.h3-title-underline {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--black);
+  border-bottom: 2px solid var(--blue);
+  padding-bottom: 4px;
+}
+
 .input {
   padding: 10px;
   background-color: var(--white);
