@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Экономический Суд Содружества Независисмых Госудраств</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <header class="container-fluid header">
+  <div class="container">
+    <div class="d-flex align-items-center gap-3 pb-4">
+      <a href="/"><img class="header__logo" src="./img/logo.png" alt="лого" /></a>
+      <h1 class="fs-24 color-white d-none d-lg-block fw-medium">Экономический Суд Содружества Независисмых
+        Госудраств
+      </h1>
+    </div>
+    <nav class="header__nav d-flex align-items-center justify-content-between gap-3">
+      <ul class="d-flex gap-2 gap-xl-4 p-0 mb-0 align-items-center mr-3">
+        <li>
+          <div class="dropdown header-dropdown cursor-pointer" aria-expanded="false">
+            <a href="../about-court.html" class="dropdown-toggle">о суде</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">Компетенция</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Правовая основа деятельности</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Структура</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Реестр судей</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Председатель</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Аппарат</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Научно-консультативный совет</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">История</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="../appeal-procedure.html" class="nav__item">порядок&nbsp;обращений</a>
+        </li>
+        <li>
+          <div class="dropdown header-dropdown cursor-pointer" aria-expanded="false">
+            <a href="../about-court.html" class="dropdown-toggle">судебные дела</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#"> Информация о судебных делах </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Судебные акты </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Аннотации решений </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown header-dropdown cursor-pointer" aria-expanded="false">
+            <a href="../about-court.html" class="dropdown-toggle">пленум</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">Информация о деятельности Пленума</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Члены Пленума </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"> Постановления Пленума </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown header-dropdown cursor-pointer" aria-expanded="false">
+            <a href="../about-court.html" class="dropdown-toggle">аналитика</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">Экспертно-аналитическая деятельность</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Обзоры судебной практики</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Судебная статистика</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Справочно-статистическая информация</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Отчёты о деятельности</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown header-dropdown cursor-pointer" aria-expanded="false">
+            <a href="../about-court.html" class="dropdown-toggle">новости</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">Новости Суда</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Новости Содружества</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Новости высших национальных судов</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Архив новостей</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown header-dropdown cursor-pointer" aria-expanded="false">
+            <a href="../press-center.html" class="dropdown-toggle">пресс-центр</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">Издания</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Публикации</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Международные конференции</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Информационные партнеры</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Каталог ссылок</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="../about-court.html" class="nav__item">контакты</a></li>
+      </ul>
+      <div class="header__search pb-3">
+        <input class="input" type="text" placeholder="Поиск" />
+        <button type="button"><i class="bi bi-search"></i></button>
+      </div>
+    </nav>
+  </div>
+</header>
+    <header class="container mobile-header">
+  <div class="d-flex align-items-center justify-content-between gap-3 w-100">
+    <a class="mobile-header__logo" href="/"><img src="./img/mobile-logo.png" alt="лого" /></a>
+    <div class="mobile-header__content d-flex align-items-center gap-4">
+      <form class="mobile-header__search-body w-100">
+        <input class="mobile-header__search-input input" type="text" placeholder="Поиск">
+        <button type="button"><i class="bi bi-search"></i></button>
+      </form>
+
+      <div class="mobile-header__search-btn">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_237_1408)">
+            <path
+              d="M20.5491 18.1021C22.2436 15.7898 23.0026 12.9229 22.6741 10.0751C22.3457 7.22722 20.9541 4.6084 18.7777 2.74253C16.6013 0.876666 13.8007 -0.09864 10.9361 0.011738C8.07146 0.122116 5.35417 1.31004 3.32781 3.33784C1.30146 5.36565 0.115483 8.08379 0.00715487 10.9485C-0.101173 13.8131 0.876136 16.6131 2.74356 18.7881C4.61098 20.9632 7.2308 22.3529 10.0789 22.6793C12.927 23.0057 15.7933 22.2447 18.1043 20.5486H18.1026C18.1551 20.6186 18.2111 20.6851 18.2741 20.7498L25.0116 27.4873C25.3397 27.8157 25.7849 28.0002 26.2491 28.0004C26.7133 28.0006 27.1586 27.8163 27.487 27.4882C27.8153 27.16 27.9999 26.7149 28.0001 26.2507C28.0002 25.7864 27.816 25.3412 27.4878 25.0128L20.7503 18.2753C20.6878 18.212 20.6205 18.1535 20.5491 18.1003V18.1021ZM21.0006 11.3751C21.0006 12.639 20.7516 13.8906 20.2679 15.0584C19.7842 16.2261 19.0753 17.2872 18.1815 18.181C17.2877 19.0747 16.2267 19.7837 15.0589 20.2674C13.8912 20.7511 12.6396 21.0001 11.3756 21.0001C10.1116 21.0001 8.86003 20.7511 7.69227 20.2674C6.52451 19.7837 5.46346 19.0747 4.56969 18.181C3.67593 17.2872 2.96696 16.2261 2.48325 15.0584C1.99955 13.8906 1.75059 12.639 1.75059 11.3751C1.75059 8.82235 2.76465 6.37419 4.56969 4.56915C6.37473 2.76411 8.82289 1.75005 11.3756 1.75005C13.9283 1.75005 16.3765 2.76411 18.1815 4.56915C19.9865 6.37419 21.0006 8.82235 21.0006 11.3751Z"
+              fill="#FCFCFC" />
+          </g>
+          <defs>
+            <clipPath id="clip0_237_1408">
+              <rect width="28" height="28" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <button class="mobile-header__menu">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+      <button class="mobile-header__search-close hidden">
+        <i class="bi bi-x color-white"></i>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-header__nav">
+    <div class="mobile-header__accordion accordion" id="accordion">
+      <div class="mobile-header__accordion-item accordion-item">
+        <h2 class="mobile-header__accordion-header accordion-header">
+          <button class="mobile-header__accordion-button accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#accordion-body-1" aria-expanded="false"
+            aria-controls="accordion-body-1">
+            о суде
+          </button>
+        </h2>
+        <div id="accordion-body-1" class="accordion-collapse collapse">
+          <div class="mobile-header__accordion-body accordion-body">
+            <ul class="mobile-header__accordion-body-list">
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">О суде</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Компетенция</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="achievements.html">
+                  Правовая основа деятельности
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Реестр
+                  судей</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item"
+                  href="structure-and-managments.html">Председатель</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Аппарат</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">
+                  Научно-консультативный совет
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">История</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a class="color-white text-uppercase py-2" href="appeal-procedure.html">порядок обращения</a>
+      </div>
+      <div class="mobile-header__accordion-item accordion-item">
+        <h2 class="mobile-header__accordion-header accordion-header">
+          <button class="mobile-header__accordion-button accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#accordion-body-2" aria-expanded="false"
+            aria-controls="accordion-body-2">
+            судебные дела
+          </button>
+        </h2>
+        <div id="accordion-body-2" class="accordion-collapse collapse">
+          <div class="mobile-header__accordion-body accordion-body">
+            <ul class="mobile-header__accordion-body-list">
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Судебные дела
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Информация о судебных делах
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="achievements.html">
+                  Судебные акты
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Аннотации
+                  решений</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-header__accordion-item accordion-item">
+        <h2 class="mobile-header__accordion-header accordion-header">
+          <button class="mobile-header__accordion-button accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#accordion-body-3" aria-expanded="false"
+            aria-controls="accordion-body-3">
+            пленум
+          </button>
+        </h2>
+        <div id="accordion-body-3" class="accordion-collapse collapse">
+          <div class="mobile-header__accordion-body accordion-body">
+            <ul class="mobile-header__accordion-body-list">
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Пленум
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Информация о деятельности
+                  Пленума
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="achievements.html">
+                  Члены Пленума
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item"
+                  href="structure-and-managments.html">Постановления Пленума</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-header__accordion-item accordion-item">
+        <h2 class="mobile-header__accordion-header accordion-header">
+          <button class="mobile-header__accordion-button accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#accordion-body-4" aria-expanded="false"
+            aria-controls="accordion-body-4">
+            Аналитика
+          </button>
+        </h2>
+        <div id="accordion-body-4" class="accordion-collapse collapse">
+          <div class="mobile-header__accordion-body accordion-body">
+            <ul class="mobile-header__accordion-body-list">
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Аналитика
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Экспертно-аналитическая
+                  деятельность
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="achievements.html">
+                  Обзоры судебной практики
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Судебная
+                  статистика</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item"
+                  href="structure-and-managments.html">Справочно-статистическая информация</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Отчёты о
+                  деятельности</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-header__accordion-item accordion-item">
+        <h2 class="mobile-header__accordion-header accordion-header">
+          <button class="mobile-header__accordion-button accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#accordion-body-5" aria-expanded="false"
+            aria-controls="accordion-body-5">
+            новости
+          </button>
+        </h2>
+        <div id="accordion-body-5" class="accordion-collapse collapse">
+          <div class="mobile-header__accordion-body accordion-body">
+            <ul class="mobile-header__accordion-body-list">
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Новости
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Новости Суда
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="achievements.html">
+                  Новости Содружества
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Новости
+                  высших национальных судов</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Архив
+                  новостей</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-header__accordion-item accordion-item">
+        <h2 class="mobile-header__accordion-header accordion-header">
+          <button class="mobile-header__accordion-button accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#accordion-body-6" aria-expanded="false"
+            aria-controls="accordion-body-6">
+            Пресс-центр
+          </button>
+        </h2>
+        <div id="accordion-body-6" class="accordion-collapse collapse">
+          <div class="mobile-header__accordion-body accordion-body">
+            <ul class="mobile-header__accordion-body-list">
+              <li>
+                <a class="mobile-header__accordion-body-item" href="../press-center.html">Пресс-центр
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="history.html">Издания
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="achievements.html">
+                  Публикации
+                </a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item"
+                  href="structure-and-managments.html">Международные конференции</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item"
+                  href="structure-and-managments.html">Информационные партнеры</a>
+              </li>
+              <li>
+                <a class="mobile-header__accordion-body-item" href="structure-and-managments.html">Каталог
+                  ссылок</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a class="color-white text-uppercase py-2" href="#">контакты</a>
+      </div>
+    </div>
+</header>
+    <main class="container">
+      <div class="page">
+        <nav>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+            <li class="breadcrumbs__item active">Пресс-центр</li>
+          </ul>
+        </nav>
+        <h2 class="h2-title mb-4">Пресс-центр</h2>
+        <section class="mb-80">
+          <div class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap gap-3">
+  <h2 class="h2-title">издания</h2>
+  <a class="d-flex gap-2 align-items-center link-with-chevron" href="#">
+    <span>Все издания</span>
+    <i class="bi bi-chevron-right"></i>
+  </a>
+</div>
+          <div class="row row-cols-xs-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 mt-4 row-gap-3">
+            <div class="col">
+              <a href="#" class="edition-card">
+                <div class="edition-img-container">
+                  <img src="./img/editions/editions1.png" alt="Издание">
+                </div>
+                <p class="edition-title">Сборник "Решения Экономического СНГ, 1992-2006"</p>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="edition-card">
+                <div class="edition-img-container">
+                  <img src="./img/editions/editions2.png" alt="Издание">
+                </div>
+                <p class="edition-title">Сборник "Решения Экономического СНГ, 2007"</p>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="edition-card">
+                <div class="edition-img-container">
+                  <img src="./img/editions/editions3.png" alt="Издание">
+                </div>
+                <p class="edition-title">Материалы Международной научно-практической конференции посвященной
+                  15-летию Экономического Суда СНГ</p>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="edition-card">
+                <div class="edition-img-container">
+                  <img src="./img/editions/editions4.png" alt="Издание">
+                </div>
+
+                <p class="edition-title">Юбилейное издание "Экономический Суд Содружества Независимых
+                  Государств.15 лет"</p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="mb-80">
+          <div class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap gap-3">
+  <h2 class="h2-title">Публикации</h2>
+  <a class="d-flex gap-2 align-items-center link-with-chevron" href="#">
+    <span>Все публикации</span>
+    <i class="bi bi-chevron-right"></i>
+  </a>
+</div>
+          <div class="row row-cols-1 row-cols-md-2 mt-4 row-gap-3">
+            <div class="col">
+              <a href="#" class="publication-card">
+                <div class="publication-icon-container">
+                  <svg width="56" height="51" viewBox="0 0 56 51" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1116_3492)">
+                      <path
+                        d="M21.3008 45.9389V48.1615C21.3008 48.9901 21.9725 49.662 22.8013 49.662H48.6469C49.4756 49.662 50.1474 48.9902 50.1474 48.1615V18.1081M50.1474 15.2534V10.1946C50.1474 9.36598 49.4757 8.69414 48.6469 8.69414H42.6228"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M13.5741 41.9298V44.1842C13.5741 45.0129 14.2458 45.6847 15.0745 45.6847H31.3855M34.2401 45.6847H40.9201C41.7487 45.6847 42.4206 45.0129 42.4206 44.1842V6.21735C42.4206 5.38871 41.7488 4.71687 40.9201 4.71687H34.8827M19.881 5.0933H30.7177M19.881 9.73069H30.7177M9.82812 14.3681H30.7177M9.82812 19.0055H30.7177M9.82812 32.9177H30.7177M9.82812 37.5551H30.7177M16.1801 11.0378H10.5526C10.3713 11.0378 10.1974 10.9658 10.0692 10.8376C9.941 10.7094 9.86898 10.5355 9.86898 10.3542V4.72662C9.86898 4.5453 9.941 4.37141 10.0692 4.2432C10.1974 4.115 10.3713 4.04297 10.5526 4.04297H16.1801C16.3614 4.04297 16.5353 4.115 16.6635 4.2432C16.7917 4.37141 16.8637 4.5453 16.8637 4.72662V10.3541C16.8638 10.4439 16.8461 10.5328 16.8117 10.6157C16.7774 10.6987 16.727 10.7741 16.6635 10.8376C16.6001 10.9011 16.5247 10.9514 16.4417 10.9858C16.3588 11.0202 16.2699 11.0378 16.1801 11.0378ZM10.9158 23.643H29.6302C30.2309 23.643 30.7178 24.1299 30.7178 24.7306V27.1928C30.7178 27.7935 30.2309 28.2804 29.6302 28.2804H10.9158C10.3151 28.2804 9.82812 27.7935 9.82812 27.1928V24.7306C9.82812 24.1298 10.3151 23.643 10.9158 23.643Z"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M10.7213 0.738477H7.35205C6.5234 0.738477 5.85156 1.41021 5.85156 2.23896V40.2058C5.85156 41.0345 6.5233 41.7063 7.35205 41.7063H33.1977C34.0263 41.7063 34.6982 41.0346 34.6982 40.2058V2.23896C34.6982 1.41031 34.0264 0.738477 33.1977 0.738477H13.576"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1116_3492">
+                        <rect width="56" height="50.4" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>
+                  <p class="publication-title">Интервью Председателя Экономического Суда СНГ Плотникова А.В.
+                    радио Sputnik Беларусь Интервью Председателя Экономического Суда СНГ Плотникова А.В.
+                    радио Sputnik Беларусь</p>
+                  <p class="mb-0 lh-1 color-gray-dark">29.11.2024</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="publication-card">
+                <div class="publication-icon-container">
+                  <svg width="56" height="51" viewBox="0 0 56 51" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1116_3492)">
+                      <path
+                        d="M21.3008 45.9389V48.1615C21.3008 48.9901 21.9725 49.662 22.8013 49.662H48.6469C49.4756 49.662 50.1474 48.9902 50.1474 48.1615V18.1081M50.1474 15.2534V10.1946C50.1474 9.36598 49.4757 8.69414 48.6469 8.69414H42.6228"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M13.5741 41.9298V44.1842C13.5741 45.0129 14.2458 45.6847 15.0745 45.6847H31.3855M34.2401 45.6847H40.9201C41.7487 45.6847 42.4206 45.0129 42.4206 44.1842V6.21735C42.4206 5.38871 41.7488 4.71687 40.9201 4.71687H34.8827M19.881 5.0933H30.7177M19.881 9.73069H30.7177M9.82812 14.3681H30.7177M9.82812 19.0055H30.7177M9.82812 32.9177H30.7177M9.82812 37.5551H30.7177M16.1801 11.0378H10.5526C10.3713 11.0378 10.1974 10.9658 10.0692 10.8376C9.941 10.7094 9.86898 10.5355 9.86898 10.3542V4.72662C9.86898 4.5453 9.941 4.37141 10.0692 4.2432C10.1974 4.115 10.3713 4.04297 10.5526 4.04297H16.1801C16.3614 4.04297 16.5353 4.115 16.6635 4.2432C16.7917 4.37141 16.8637 4.5453 16.8637 4.72662V10.3541C16.8638 10.4439 16.8461 10.5328 16.8117 10.6157C16.7774 10.6987 16.727 10.7741 16.6635 10.8376C16.6001 10.9011 16.5247 10.9514 16.4417 10.9858C16.3588 11.0202 16.2699 11.0378 16.1801 11.0378ZM10.9158 23.643H29.6302C30.2309 23.643 30.7178 24.1299 30.7178 24.7306V27.1928C30.7178 27.7935 30.2309 28.2804 29.6302 28.2804H10.9158C10.3151 28.2804 9.82812 27.7935 9.82812 27.1928V24.7306C9.82812 24.1298 10.3151 23.643 10.9158 23.643Z"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M10.7213 0.738477H7.35205C6.5234 0.738477 5.85156 1.41021 5.85156 2.23896V40.2058C5.85156 41.0345 6.5233 41.7063 7.35205 41.7063H33.1977C34.0263 41.7063 34.6982 41.0346 34.6982 40.2058V2.23896C34.6982 1.41031 34.0264 0.738477 33.1977 0.738477H13.576"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1116_3492">
+                        <rect width="56" height="50.4" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>
+                  <p class="publication-title">Интервью Председателя Экономического Суда СНГ Плотникова А.В.
+                    радио Sputnik Беларусь Интервью Председателя Экономического Суда СНГ Плотникова А.В.
+                    радио Sputnik Беларусь</p>
+                  <p class="mb-0 lh-1 color-gray-dark">29.11.2024</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="publication-card">
+                <div class="publication-icon-container">
+                  <svg width="56" height="51" viewBox="0 0 56 51" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1116_3492)">
+                      <path
+                        d="M21.3008 45.9389V48.1615C21.3008 48.9901 21.9725 49.662 22.8013 49.662H48.6469C49.4756 49.662 50.1474 48.9902 50.1474 48.1615V18.1081M50.1474 15.2534V10.1946C50.1474 9.36598 49.4757 8.69414 48.6469 8.69414H42.6228"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M13.5741 41.9298V44.1842C13.5741 45.0129 14.2458 45.6847 15.0745 45.6847H31.3855M34.2401 45.6847H40.9201C41.7487 45.6847 42.4206 45.0129 42.4206 44.1842V6.21735C42.4206 5.38871 41.7488 4.71687 40.9201 4.71687H34.8827M19.881 5.0933H30.7177M19.881 9.73069H30.7177M9.82812 14.3681H30.7177M9.82812 19.0055H30.7177M9.82812 32.9177H30.7177M9.82812 37.5551H30.7177M16.1801 11.0378H10.5526C10.3713 11.0378 10.1974 10.9658 10.0692 10.8376C9.941 10.7094 9.86898 10.5355 9.86898 10.3542V4.72662C9.86898 4.5453 9.941 4.37141 10.0692 4.2432C10.1974 4.115 10.3713 4.04297 10.5526 4.04297H16.1801C16.3614 4.04297 16.5353 4.115 16.6635 4.2432C16.7917 4.37141 16.8637 4.5453 16.8637 4.72662V10.3541C16.8638 10.4439 16.8461 10.5328 16.8117 10.6157C16.7774 10.6987 16.727 10.7741 16.6635 10.8376C16.6001 10.9011 16.5247 10.9514 16.4417 10.9858C16.3588 11.0202 16.2699 11.0378 16.1801 11.0378ZM10.9158 23.643H29.6302C30.2309 23.643 30.7178 24.1299 30.7178 24.7306V27.1928C30.7178 27.7935 30.2309 28.2804 29.6302 28.2804H10.9158C10.3151 28.2804 9.82812 27.7935 9.82812 27.1928V24.7306C9.82812 24.1298 10.3151 23.643 10.9158 23.643Z"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M10.7213 0.738477H7.35205C6.5234 0.738477 5.85156 1.41021 5.85156 2.23896V40.2058C5.85156 41.0345 6.5233 41.7063 7.35205 41.7063H33.1977C34.0263 41.7063 34.6982 41.0346 34.6982 40.2058V2.23896C34.6982 1.41031 34.0264 0.738477 33.1977 0.738477H13.576"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1116_3492">
+                        <rect width="56" height="50.4" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>
+                  <p class="publication-title">Интервью Председателя Экономического Суда СНГ Плотникова А.В.
+                    радио Sputnik Беларусь Интервью Председателя Экономического Суда СНГ Плотникова А.В.
+                    радио Sputnik Беларусь</p>
+                  <p class="mb-0 lh-1 color-gray-dark">29.11.2024</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="publication-card">
+                <div class="publication-icon-container">
+                  <svg width="56" height="51" viewBox="0 0 56 51" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1116_3492)">
+                      <path
+                        d="M21.3008 45.9389V48.1615C21.3008 48.9901 21.9725 49.662 22.8013 49.662H48.6469C49.4756 49.662 50.1474 48.9902 50.1474 48.1615V18.1081M50.1474 15.2534V10.1946C50.1474 9.36598 49.4757 8.69414 48.6469 8.69414H42.6228"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M13.5741 41.9298V44.1842C13.5741 45.0129 14.2458 45.6847 15.0745 45.6847H31.3855M34.2401 45.6847H40.9201C41.7487 45.6847 42.4206 45.0129 42.4206 44.1842V6.21735C42.4206 5.38871 41.7488 4.71687 40.9201 4.71687H34.8827M19.881 5.0933H30.7177M19.881 9.73069H30.7177M9.82812 14.3681H30.7177M9.82812 19.0055H30.7177M9.82812 32.9177H30.7177M9.82812 37.5551H30.7177M16.1801 11.0378H10.5526C10.3713 11.0378 10.1974 10.9658 10.0692 10.8376C9.941 10.7094 9.86898 10.5355 9.86898 10.3542V4.72662C9.86898 4.5453 9.941 4.37141 10.0692 4.2432C10.1974 4.115 10.3713 4.04297 10.5526 4.04297H16.1801C16.3614 4.04297 16.5353 4.115 16.6635 4.2432C16.7917 4.37141 16.8637 4.5453 16.8637 4.72662V10.3541C16.8638 10.4439 16.8461 10.5328 16.8117 10.6157C16.7774 10.6987 16.727 10.7741 16.6635 10.8376C16.6001 10.9011 16.5247 10.9514 16.4417 10.9858C16.3588 11.0202 16.2699 11.0378 16.1801 11.0378ZM10.9158 23.643H29.6302C30.2309 23.643 30.7178 24.1299 30.7178 24.7306V27.1928C30.7178 27.7935 30.2309 28.2804 29.6302 28.2804H10.9158C10.3151 28.2804 9.82812 27.7935 9.82812 27.1928V24.7306C9.82812 24.1298 10.3151 23.643 10.9158 23.643Z"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M10.7213 0.738477H7.35205C6.5234 0.738477 5.85156 1.41021 5.85156 2.23896V40.2058C5.85156 41.0345 6.5233 41.7063 7.35205 41.7063H33.1977C34.0263 41.7063 34.6982 41.0346 34.6982 40.2058V2.23896C34.6982 1.41031 34.0264 0.738477 33.1977 0.738477H13.576"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1116_3492">
+                        <rect width="56" height="50.4" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>
+                  <p class="publication-title">Интервью Председателя Экономического Суда СНГ Плотникова А.В.
+                    радио Sputnik Беларусь Интервью Председателя Экономического Суда СНГ Плотникова А.В.
+                    радио Sputnik Беларусь</p>
+                  <p class="mb-0 lh-1 color-gray-dark">29.11.2024</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="publication-card">
+                <div class="publication-icon-container">
+                  <svg width="56" height="51" viewBox="0 0 56 51" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1116_3492)">
+                      <path
+                        d="M21.3008 45.9389V48.1615C21.3008 48.9901 21.9725 49.662 22.8013 49.662H48.6469C49.4756 49.662 50.1474 48.9902 50.1474 48.1615V18.1081M50.1474 15.2534V10.1946C50.1474 9.36598 49.4757 8.69414 48.6469 8.69414H42.6228"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M13.5741 41.9298V44.1842C13.5741 45.0129 14.2458 45.6847 15.0745 45.6847H31.3855M34.2401 45.6847H40.9201C41.7487 45.6847 42.4206 45.0129 42.4206 44.1842V6.21735C42.4206 5.38871 41.7488 4.71687 40.9201 4.71687H34.8827M19.881 5.0933H30.7177M19.881 9.73069H30.7177M9.82812 14.3681H30.7177M9.82812 19.0055H30.7177M9.82812 32.9177H30.7177M9.82812 37.5551H30.7177M16.1801 11.0378H10.5526C10.3713 11.0378 10.1974 10.9658 10.0692 10.8376C9.941 10.7094 9.86898 10.5355 9.86898 10.3542V4.72662C9.86898 4.5453 9.941 4.37141 10.0692 4.2432C10.1974 4.115 10.3713 4.04297 10.5526 4.04297H16.1801C16.3614 4.04297 16.5353 4.115 16.6635 4.2432C16.7917 4.37141 16.8637 4.5453 16.8637 4.72662V10.3541C16.8638 10.4439 16.8461 10.5328 16.8117 10.6157C16.7774 10.6987 16.727 10.7741 16.6635 10.8376C16.6001 10.9011 16.5247 10.9514 16.4417 10.9858C16.3588 11.0202 16.2699 11.0378 16.1801 11.0378ZM10.9158 23.643H29.6302C30.2309 23.643 30.7178 24.1299 30.7178 24.7306V27.1928C30.7178 27.7935 30.2309 28.2804 29.6302 28.2804H10.9158C10.3151 28.2804 9.82812 27.7935 9.82812 27.1928V24.7306C9.82812 24.1298 10.3151 23.643 10.9158 23.643Z"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M10.7213 0.738477H7.35205C6.5234 0.738477 5.85156 1.41021 5.85156 2.23896V40.2058C5.85156 41.0345 6.5233 41.7063 7.35205 41.7063H33.1977C34.0263 41.7063 34.6982 41.0346 34.6982 40.2058V2.23896C34.6982 1.41031 34.0264 0.738477 33.1977 0.738477H13.576"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1116_3492">
+                        <rect width="56" height="50.4" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>
+                  <p class="publication-title">Интервью Председателя Экономического Суда СНГ Плотникова А.В.
+                    радио Sputnik Беларусь Интервью Председателя Экономического Суда СНГ Плотникова А.В.
+                    радио Sputnik Беларусь</p>
+                  <p class="mb-0 lh-1 color-gray-dark">29.11.2024</p>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="publication-card">
+                <div class="publication-icon-container">
+                  <svg width="56" height="51" viewBox="0 0 56 51" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1116_3492)">
+                      <path
+                        d="M21.3008 45.9389V48.1615C21.3008 48.9901 21.9725 49.662 22.8013 49.662H48.6469C49.4756 49.662 50.1474 48.9902 50.1474 48.1615V18.1081M50.1474 15.2534V10.1946C50.1474 9.36598 49.4757 8.69414 48.6469 8.69414H42.6228"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M13.5741 41.9298V44.1842C13.5741 45.0129 14.2458 45.6847 15.0745 45.6847H31.3855M34.2401 45.6847H40.9201C41.7487 45.6847 42.4206 45.0129 42.4206 44.1842V6.21735C42.4206 5.38871 41.7488 4.71687 40.9201 4.71687H34.8827M19.881 5.0933H30.7177M19.881 9.73069H30.7177M9.82812 14.3681H30.7177M9.82812 19.0055H30.7177M9.82812 32.9177H30.7177M9.82812 37.5551H30.7177M16.1801 11.0378H10.5526C10.3713 11.0378 10.1974 10.9658 10.0692 10.8376C9.941 10.7094 9.86898 10.5355 9.86898 10.3542V4.72662C9.86898 4.5453 9.941 4.37141 10.0692 4.2432C10.1974 4.115 10.3713 4.04297 10.5526 4.04297H16.1801C16.3614 4.04297 16.5353 4.115 16.6635 4.2432C16.7917 4.37141 16.8637 4.5453 16.8637 4.72662V10.3541C16.8638 10.4439 16.8461 10.5328 16.8117 10.6157C16.7774 10.6987 16.727 10.7741 16.6635 10.8376C16.6001 10.9011 16.5247 10.9514 16.4417 10.9858C16.3588 11.0202 16.2699 11.0378 16.1801 11.0378ZM10.9158 23.643H29.6302C30.2309 23.643 30.7178 24.1299 30.7178 24.7306V27.1928C30.7178 27.7935 30.2309 28.2804 29.6302 28.2804H10.9158C10.3151 28.2804 9.82812 27.7935 9.82812 27.1928V24.7306C9.82812 24.1298 10.3151 23.643 10.9158 23.643Z"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M10.7213 0.738477H7.35205C6.5234 0.738477 5.85156 1.41021 5.85156 2.23896V40.2058C5.85156 41.0345 6.5233 41.7063 7.35205 41.7063H33.1977C34.0263 41.7063 34.6982 41.0346 34.6982 40.2058V2.23896C34.6982 1.41031 34.0264 0.738477 33.1977 0.738477H13.576"
+                        stroke="#0D357B" stroke-width="1.47656" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1116_3492">
+                        <rect width="56" height="50.4" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>
+                  <p class="publication-title">Интервью Председателя Экономического Суда СНГ Плотникова А.В.
+                    радио Sputnik Беларусь Интервью Председателя Экономического Суда СНГ Плотникова А.В.
+                    радио Sputnik Беларусь</p>
+                  <p class="mb-0 lh-1 color-gray-dark">29.11.2024</p>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </section>
+        <section class="mb-80">
+          <div class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap gap-3">
+  <h2 class="h2-title">Международные конференции</h2>
+  <a class="d-flex gap-2 align-items-center link-with-chevron" href="#">
+    <span>Перейти&nbsp;в&nbsp;раздел</span>
+    <i class="bi bi-chevron-right"></i>
+  </a>
+</div>
+          <div class="row row-cols-1 row-cols-lg-2 mt-4 row-gap-3">
+            <div class="col">
+              <div class="news-card">
+                <div class="news-card__img">
+                  <img class="" src="./img/news-bg.png" alt="...">
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <a href="#" class="news-card__text">18 декабря 2024 года Председатель Экономического Суда
+                    СНГ
+                    Плотников
+                    А.В. и советник Панфёрова Л.А. приняли участие приняли участие приняли участие приняли
+                    участие...
+                  </a>
+                  <div class="d-flex gap-2">
+                    <span class="color-gray-dark">29.11.2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="news-card">
+                <div class="news-card__img">
+                  <img class="" src="./img/news-default-bg.png" alt="...">
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <a href="#" class="news-card__text">18 декабря 2024 года Председатель Экономического Суда
+                    СНГ
+                    Плотников
+                    А.В. и советник Панфёрова Л.А. приняли участие приняли участие приняли участие приняли
+                    участие...
+                  </a>
+                  <div class="d-flex gap-2">
+                    <span class="color-gray-dark">29.11.2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="news-card">
+                <div class="news-card__img">
+                  <img class="" src="./img/news-bg.png" alt="...">
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <a href="#" class="news-card__text">18 декабря 2024 года Председатель Экономического Суда
+                    СНГ
+                    Плотников
+                    А.В. и советник Панфёрова Л.А. приняли участие приняли участие приняли участие приняли
+                    участие...
+                  </a>
+                  <div class="d-flex gap-2">
+                    <span class="color-gray-dark">29.11.2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="news-card">
+                <div class="news-card__img">
+                  <img class="" src="./img/news-bg.png" alt="...">
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <a href="#" class="news-card__text">Международная научно-практическая конференция
+                    «Актуальные проблемы использования примирительных процедур как формы разрешения споров в
+                    национальном и международном праве»
+                  </a>
+                  <div class="d-flex gap-2">
+                    <span class="color-gray-dark">29.11.2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="news-card">
+                <div class="news-card__img">
+                  <img class="" src="./img/news-default-bg.png" alt="...">
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <a href="#" class="news-card__text">18 декабря 2024 года Председатель Экономического Суда
+                    СНГ
+                    Плотников
+                    А.В. и советник Панфёрова Л.А. приняли участие приняли участие приняли участие приняли
+                    участие...
+                  </a>
+                  <div class="d-flex gap-2">
+                    <span class="color-gray-dark">29.11.2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="news-card">
+                <div class="news-card__img">
+                  <img class="" src="./img/news-bg.png" alt="...">
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <a href="#" class="news-card__text">18 декабря 2024 года Председатель Экономического Суда
+                    СНГ
+                    Плотников
+                    А.В. и советник Панфёрова Л.А. приняли участие приняли участие приняли участие приняли
+                    участие...
+                  </a>
+                  <div class="d-flex gap-2">
+                    <span class="color-gray-dark">29.11.2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mb-80">
+          <div class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap gap-3">
+  <h2 class="h2-title">Информационные партнеры</h2>
+  <a class="d-flex gap-2 align-items-center link-with-chevron" href="#">
+    <span>Все партнеры</span>
+    <i class="bi bi-chevron-right"></i>
+  </a>
+</div>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 mt-4 row-gap-3">
+            <div class="col">
+              <a href="#" class="information-partner-card">
+                <div class="information-partner-img-container">
+                  <img src="./img/info-partners/partners1.png" alt="Издание">
+                </div>
+                <p class="information-partner-title">Сборник "Решения Экономического СНГ, 1992-2006"</p>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="information-partner-card">
+                <div class="information-partner-img-container">
+                  <img src="./img/info-partners/partners2.png" alt="Издание">
+                </div>
+                <p class="information-partner-title">ЕВРАЗИЙСКИЙ ЮРИДИЧЕСКИЙ ЖУРНАЛ</p>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="information-partner-card">
+                <div class="information-partner-img-container">
+                  <img src="./img/info-partners/partners3.png" alt="Издание">
+                </div>
+                <p class="information-partner-title">РОССИЙСКАЯ ПРАВОВАЯ ГАЗЕТА «ЭЖ-ЮРИСТ»</p>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="information-partner-card">
+                <div class="information-partner-img-container">
+                  <img src="./img/info-partners/partners4.png" alt="Издание">
+                </div>
+                <p class="information-partner-title">ООО «ЮРСПЕКТР»</p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="mb-80">
+          <div class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap gap-3">
+  <h2 class="h2-title">каталог ссылок</h2>
+  <a class="d-flex gap-2 align-items-center link-with-chevron" href="#">
+    <span>Все ссылки</span>
+    <i class="bi bi-chevron-right"></i>
+  </a>
+</div>
+          <div class="row row-cols-1 row-cols-md-2 mt-4 row-gap-3">
+            <div class="col">
+              <a href="#" class="catalog-link">
+                <i class="bi bi-link-45deg"></i>
+                <span>Содружество Независимых Государств</span>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="catalog-link">
+                <i class="bi bi-link-45deg"></i>
+                <span>Межгосударственный статистический комитет СНГ</span>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="catalog-link">
+                <i class="bi bi-link-45deg"></i>
+                <span>Интернет портал СНГ</span>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="catalog-link">
+                <i class="bi bi-link-45deg"></i>
+                <span>Антитеррористический центр государств-участников СНГ</span>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="catalog-link">
+                <i class="bi bi-link-45deg"></i>
+                <span>Межпарламентская Ассамблея государств — участников СНГ</span>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="catalog-link">
+                <i class="bi bi-link-45deg"></i>
+                <span>Координационный совет генеральных прокуроров государств-участников СНГ</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="container-fluid footer">
+  <div class="container">
+    <h3 class="footer__title">Экономический Суд Содружества Независимых Государств</h3>
+    <div class="footer__container">
+      <div class="footer__column">
+        <ul class="d-flex flex-column gap-2">
+          <li><a class="link-white" href="#">Компетенция</a></li>
+          <li><a class="link-white" href="#">Правовая основа деятельности</a></li>
+          <li><a class="link-white" href="#">Судебные акты</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <ul class="d-flex flex-column gap-2">
+          <li><a class="link-white" href="#">Реестр судей</a></li>
+          <li><a class="link-white" href="#">Члены Пленума</a></li>
+          <li><a class="link-white" href="#">Отчеты о деятельности</a></li>
+          <li><a class="link-white" href="#">Каталог ссылок</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <address class="d-flex flex-column gap-2 mb-0">
+          <span>220030, Республика Беларусь</span>
+          <span>г. Минск, ул. Кирова 17</span>
+          <span>тел.: <a class="link-white" href="tel:+375173428199">+375-17-342-81-99</a></span>
+          <span> факс: +375-17-345-81-08</span>
+          <span>email: <a class="link-white" href="mailto:info@eсsng.org">info@eсsng.org</a></span>
+        </address>
+      </div>
+    </div>
+    <div class="d-flex flex-column gap-3 mt-2">
+      <a class="link-white" href="#">Карта сайта</a>
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+        <p class="mb-0" id="year"></p>
+        <p class="mb-0">
+          Сайт разработан:
+          <a class="link-white" href="https://info-center.by">
+            РУП «Информационно-издательский центр по налогам и сборам»
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const year = new Date().getFullYear(); // Получаем текущий год
+  document.getElementById("year").textContent = `${year}, Все права защищены`; 
+</script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+
+</html>
