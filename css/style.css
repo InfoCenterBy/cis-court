@@ -826,6 +826,53 @@ ol {
   font-size: 1.5rem !important;
 }
 
+.page {
+  padding-bottom: 80px;
+}
+
+.h2-title {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.h3-title-underline {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--black);
+  border-bottom: 3px solid var(--blue);
+  padding-bottom: 4px;
+}
+
+.list {
+  padding-left: 20px;
+}
+.list li {
+  position: relative;
+}
+.list li:not(:last-child) {
+  margin-bottom: 8px;
+}
+.list li:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  left: -14px;
+  top: 8px;
+}
+
+.hr {
+  width: 100%;
+  display: block;
+  height: 2px;
+  background-color: var(--blue);
+}
+
 .input {
   padding: 10px;
   background-color: var(--white);
@@ -1055,6 +1102,9 @@ ol {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
   color: var(--blue);
   -webkit-transition: all 0.15s linear;
@@ -1071,15 +1121,21 @@ ol {
   font-size: 20px;
 }
 
-.h2-title {
-  font-size: 24px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: var(--black);
+.text-highlight {
+  padding-block: 8px;
+  padding-left: 24px;
+  border-left: 3px solid var(--blue);
+}
+.text-highlight p:last-child {
+  margin-bottom: 0;
 }
 
 .mb-80 {
   margin-bottom: 80px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }
 
 .hover-no {
@@ -1889,6 +1945,18 @@ ol {
   width: 12px;
   height: 12px;
   margin-left: 4px;
+}
+
+.about-court-img {
+  max-width: 453px;
+}
+.about-court-img img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .about-court-img {
+    max-width: 100%;
+  }
 }
 
 html,
