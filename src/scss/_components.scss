@@ -272,3 +272,13 @@
     font-size: 20px;
   }
 }
+
+.text-highlight {
+  padding-block: 8px;
+  padding-left: 24px;
+  border-left: 3px solid var(--blue);
+
+  & p:last-child {
+    margin-bottom: 0;
+  }
+}
