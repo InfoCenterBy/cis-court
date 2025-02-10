@@ -2006,6 +2006,46 @@ ol {
   }
 }
 
+.sidebar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+.sidebar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--gray);
+}
+.sidebar__item:hover .sidebar__link, .sidebar__item:hover i {
+  color: var(--blue-dark);
+}
+.sidebar__item.active .sidebar__link, .sidebar__item.active i {
+  color: var(--blue-dark);
+}
+.sidebar__item i {
+  color: var(--black);
+  font-size: 20px;
+}
+.sidebar__link {
+  text-transform: uppercase;
+  color: var(--black);
+  font-style: 18px;
+  font-weight: 500;
+}
+
 html,
 body {
   font-family: "Roboto", sans-serif;
