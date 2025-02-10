@@ -4,9 +4,13 @@
   background-size: 100% 100%;
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: darken;
-  padding-top: 16px;
+  padding-top: 80px;
   padding-inline: 0;
   display: block;
+
+  @media (max-width: 1790px) {
+    padding-top: 16px;
+  }
 
   &__search {
     position: relative;
@@ -22,9 +26,28 @@
     }
   }
 
+  &__title {
+    font-size: 32px;
+
+    @media (max-width: 1790px) {
+      font-size: 24px;
+    }
+  }
+
   &__logo {
-    width: 120px;
-    height: 120px;
+    position: absolute;
+    top: -50px;
+    left: -170px;
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
+
+    @media (max-width: 1790px) {
+      position: static;
+      width: 120px;
+      height: 120px;
+      margin-right: 16px;
+    }
   }
 }
 
