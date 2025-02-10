@@ -57,7 +57,10 @@ function browserSync(done) {
 }
 
 function html() {
-  return src(path.src.html).pipe(fileinclude()).pipe(dest(path.build.html)).pipe(browsersync.stream());
+  return src(path.src.html)
+    .pipe(fileinclude())
+    .pipe(dest(path.build.html))
+    .pipe(browsersync.stream());
 }
 
 function css() {
@@ -65,20 +68,20 @@ function css() {
     .pipe(
       scss({
         outputStyle: "expanded",
-      })
+      }),
     )
     .pipe(
       autoprefixer({
         overrideBrowserslist: ["last 6 versions"],
         cascade: true,
-      })
+      }),
     )
     .pipe(dest(path.build.css))
     .pipe(lightningcss())
     .pipe(
       rename({
         extname: ".min.css",
-      })
+      }),
     )
     .pipe(dest(path.build.css))
     .pipe(browsersync.stream());
@@ -92,12 +95,12 @@ function js() {
       terser({
         keep_fnames: true,
         mangle: false,
-      })
+      }),
     )
     .pipe(
       rename({
         extname: ".min.js",
-      })
+      }),
     )
     .pipe(dest(path.build.js))
     .pipe(browsersync.stream());
@@ -120,7 +123,9 @@ function images() {
 }
 
 function audio() {
-  return src(path.src.audio).pipe(dest(path.build.audio)).pipe(browsersync.stream());
+  return src(path.src.audio)
+    .pipe(dest(path.build.audio))
+    .pipe(browsersync.stream());
 }
 
 function fonts() {
@@ -133,7 +138,7 @@ gulp.task("otf2ttf", function () {
     .pipe(
       fonter({
         formats: ["ttf"],
-      })
+      }),
     )
     .pipe(dest(source_folder + "/fonts/"));
 });
@@ -149,7 +154,7 @@ gulp.task("svgSprite", function () {
             example: true,
           },
         },
-      })
+      }),
     )
     .pipe(dest(path.build.img));
 });
@@ -170,7 +175,10 @@ function clean(params) {
   return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, audio));
+let build = gulp.series(
+  clean,
+  gulp.parallel(js, css, html, images, fonts, audio),
+);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fonts = fonts;
