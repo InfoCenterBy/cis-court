@@ -14,8 +14,8 @@
           </ul>
         </nav>
         <h2 class="h2-title mb-4">О суде</h2>
-        <div class="row">
-          <section class="col-12 col-lg-9">
+        <section class="row">
+          <div class="col-12 col-lg-9 order-2 order-lg-1">
             <div class="text-highlight mb-40">
               <p>
                 <span class="fw-medium">Экономический Суд Содружества Независимых Государств</span> образован
@@ -81,8 +81,8 @@
                 <img class="w-100" src="./img/court-structure.png" alt="Структура органов">
               </div>
             </div>
-          </section>
-          <aside class="col-12 col-lg-3">
+          </div>
+          <aside class="col-12 col-lg-3 order-1 order-lg-2">
             <nav class="sidebar">
               <ul class="sidebar__menu">
                 @@loop("./components/_sidebar-item.html", [
@@ -98,7 +98,7 @@
                 ])
               </ul>
             </nav>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-1 mt-5 mt-lg-3 g-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-1 g-4 mb-5 mb-lg-0">
               <div class="col">
                 <a class="news-activity" href="#">
                   <div class="news-activity__icon">
@@ -251,7 +251,7 @@
               </div>
             </div>
           </aside>
-        </div>
+        </section>
       </div>
     </main>
     @@include("./components/_footer.html")

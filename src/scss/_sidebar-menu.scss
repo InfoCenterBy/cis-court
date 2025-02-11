@@ -1,4 +1,6 @@
 .sidebar {
+  margin-bottom: 40px;
+
   &__menu {
     display: flex;
     flex-direction: column;
@@ -30,7 +32,7 @@
   &__link {
     text-transform: uppercase;
     color: var(--black);
-    font-style: 18px;
+    font-size: 18px;
     font-weight: 500;
   }
 }
