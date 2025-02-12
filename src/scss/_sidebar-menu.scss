@@ -14,13 +14,9 @@
     padding-bottom: 8px;
     border-bottom: 1px solid var(--gray);
 
-    &:hover .sidebar__link,
-    &:hover i {
-      color: var(--blue-dark);
-    }
     &.active .sidebar__link,
     &.active i {
-      color: var(--blue-dark);
+      color: var(--blue);
     }
 
     & i {
@@ -34,5 +30,13 @@
     color: var(--black);
     font-size: 18px;
     font-weight: 500;
+
+    &:hover {
+      color: var(--blue);
+    }
+
+    &:hover + i {
+      color: var(--blue);
+    }
   }
 }

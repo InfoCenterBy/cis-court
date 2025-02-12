@@ -56,6 +56,18 @@
   width: 100%;
 }
 
+.link-underline {
+  color: var(--blue);
+  text-decoration-color: var(--black) !important;
+  transition: all 0.15s linear;
+
+  &:hover {
+    color: var(--black);
+    text-decoration-line: underline;
+    text-decoration-color: var(--black);
+  }
+}
+
 .link {
   color: var(--blue);
   transition: all 0.15s linear;
@@ -258,6 +270,7 @@
   gap: 8px;
   color: var(--blue);
   transition: all 0.15s linear;
+  font-weight: 500;
 
   &:hover {
     color: var(--black);
