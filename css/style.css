@@ -1154,6 +1154,38 @@ p {
   margin-bottom: 0;
 }
 
+.download-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: var(--gray-light);
+  color: var(--black);
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+.download-card:active {
+  color: var(--blue);
+}
+.download-card__arrow {
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  visibility: hidden;
+}
+.download-card:hover {
+  color: var(--blue);
+}
+.download-card:hover .download-card__arrow {
+  visibility: visible;
+}
+.download-card p {
+  margin: 0;
+}
+
 .mb-80 {
   margin-bottom: 80px;
 }
