@@ -295,3 +295,34 @@
     margin-bottom: 0;
   }
 }
+
+.download-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: var(--gray-light);
+  color: var(--black);
+  transition: all 0.15s linear;
+
+  &:active {
+    color: var(--blue);
+  }
+
+  &__arrow {
+    transition: all 0.15s linear;
+    visibility: hidden;
+  }
+
+  &:hover {
+    color: var(--blue);
+  }
+
+  &:hover .download-card__arrow {
+    visibility: visible;
+  }
+
+  & p {
+    margin: 0;
+  }
+}

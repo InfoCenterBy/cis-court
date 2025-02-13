@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("./components/_head.html", { "title": "Правовая основа деятельности"})
+
+<body>
+  <div class="wrapper">
+    @@include("./components/_header.html")
+    <main class="container">
+      <div class="page">
+        <nav>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="about-court.html">О Суде</a></li>
+            <li class="breadcrumbs__item active">Правовая основа деятельности</li>
+          </ul>
+        </nav>
+        <h2 class="h2-title mb-4">Правовая основа деятельности</h2>
+        <div class="row">
+          <section class="col-12 col-lg-9 order-2 order-lg-1">
+            <a class="download-card" href="#">
+              <i class="color-blue fs-32 bi bi-file-earmark-pdf"></i>
+              <div class="d-flex justify-content-between w-100 align-items-center">
+                <p>Соглашение о мерах по обеспечению улучшения расчетов между хозяйственными организациями
+                  стран участников СНГ от 15 мая 1992 года
+                </p>
+                <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+              </div>
+            </a>
+            <a class="download-card" href="#">
+              <i class="color-blue fs-32 bi bi-file-earmark-pdf"></i>
+              <div class="d-flex justify-content-between w-100 align-items-center">
+                <p>Соглашение о статусе Экономического Суда Содружества Независимых Государств (в редакции
+                  Протокола от 13 сентября 2017 года о внесении изменений в Соглашение о статусе
+                  Экономического
+                  Суда Содружества Независимых Государств от 6 июля 1992 года)
+                </p>
+                <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+              </div>
+            </a>
+            <a class="download-card" href="#">
+              <i class="color-blue fs-32 bi bi-link-45deg"></i>
+              <div class="d-flex justify-content-between w-100 align-items-center">
+                <p>Соглашение о статусе Экономического Суда Содружества Независимых Государств (в редакции
+                  Протокола от 13 сентября 2017 года о внесении изменений в Соглашение о статусе
+                  Экономического
+                  Суда Содружества Независимых Государств от 6 июля 1992 года)
+                </p>
+                <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+              </div>
+            </a>
+          </section>
+          <aside class="col-12 col-lg-3 order-1 order-lg-2">
+            <nav class="sidebar">
+              <ul class="sidebar__menu">
+                @@include("./components/_about-court-sidebar.html")
+              </ul>
+            </nav>
+          </aside>
+        </div>
+      </div>
+    </main>
+    @@include("./components/_footer.html")
+  </div>
+  @@include("./components/_script.html")
+</body>
+
+</html>

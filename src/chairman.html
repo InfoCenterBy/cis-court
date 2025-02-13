@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("./components/_head.html", { "title": "Председатель"})
+
+<body>
+  <div class="wrapper">
+    @@include("./components/_header.html")
+    <main class="container">
+      <div class="page">
+        <nav>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="about-court.html">О Суде</a></li>
+            <li class="breadcrumbs__item active">Председатель</li>
+          </ul>
+        </nav>
+        <h2 class="h2-title mb-4">Председатель</h2>
+        <div class="row">
+          <section class="col-12 col-lg-9 order-2 order-lg-1">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3  g-4 g-xl-5 mb-4 mb-xl-5">
+              <div class="col">
+                <div class="judge-card">
+                  <div class="judge-img">
+                    <img src="./img/judges/plotnikov.png" alt="Плотников Андрей Владимирович">
+                  </div>
+                  <div class="d-flex flex-column justify-content-between">
+                    <p class="judge-name">Плотников Андрей Владимирович</p>
+                    <p class="judge-position">Судья от Республики Беларусь Председатель Экономического Суда
+                      СНГ <br> Председатель Пленума Экономического Суда СНГ
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>
+              Родился 5 декабря 1971 г. в г. Бобруйске (Белорусская ССР).
+            </p>
+            <p class="mb-4">
+              Образование высшее — окончил Белорусский негосударственный институт правоведения в 1995 г.,
+              Академию управления при Президенте Республики Беларусь в 1998 г.
+            </p>
+            <div class="mb-4">
+              <h3 class="h3-title-underline mb-2">
+                Трудовая деятельность:
+              </h3>
+              <ul class="list">
+                <li>юрисконсульт Минского механического завода им. С. И.  Вавилова БелОМО (1995 г.);</li>
+                <li>
+                  специалист отдела надзора и обобщения судебной практики хозяйственного суда Минской области
+                  (1995 — 1998 гг.);
+                </li>
+                <li>
+                  судья хозяйственного суда г. Минска (1999 — 2013 гг.);
+                </li>
+                <li>
+                  судья экономического суда г. Минска (2014 г.);
+                </li>
+                <li>
+                  заместитель председателя экономического суда г. Минска (2014 — 2017 гг.);
+                </li>
+                <li>
+                  судья Верховного Суда Республики Беларусь (2017 — 2023 гг.).
+                </li>
+              </ul>
+            </div>
+            <p>
+              Указом Президента Республики Беларусь от 13 мая 2022 г. №175 назначен судьей Экономического
+              Суда СНГ.
+            </p>
+          </section>
+          <aside class="col-12 col-lg-3 order-1 order-lg-2">
+            <nav class="sidebar">
+              <ul class="sidebar__menu">
+                @@include("./components/_about-court-sidebar.html")
+              </ul>
+            </nav>
+          </aside>
+        </div>
+      </div>
+    </main>
+    @@include("./components/_footer.html")
+  </div>
+  @@include("./components/_script.html")
+</body>
+
+</html>
