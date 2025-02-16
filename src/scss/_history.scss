@@ -1,0 +1,11 @@
+.history-image {
+  max-height: 590px;
+  max-width: 600px;
+  margin-inline: auto;
+
+  & img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
