@@ -2138,6 +2138,18 @@ p {
   margin-bottom: 0;
 }
 
+.history-image {
+  max-height: 590px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+.history-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 html,
 body {
   font-family: "Roboto", sans-serif;
