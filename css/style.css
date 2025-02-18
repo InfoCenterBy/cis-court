@@ -854,6 +854,22 @@ p {
   padding-bottom: 4px;
 }
 
+.button {
+  padding: 10px 20px;
+  background-color: var(--blue);
+  color: var(--white);
+  line-height: 22px;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+.button:hover {
+  background-color: var(--blue-dark);
+}
+.button:active {
+  background-color: var(--blue-light);
+  color: var(--black);
+}
+
 .list {
   padding-left: 20px;
 }
@@ -2147,6 +2163,15 @@ p {
   font-size: 20px;
 }
 .sidebar__link {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   color: var(--black);
   font-size: 18px;
