@@ -18,6 +18,23 @@
   padding-bottom: 4px;
 }
 
+.button {
+  padding: 10px 20px;
+  background-color: var(--blue);
+  color: var(--white);
+  line-height: 22px;
+  transition: all 0.15s linear;
+
+  &:hover {
+    background-color: var(--blue-dark);
+  }
+
+  &:active {
+    background-color: var(--blue-light);
+    color: var(--black);
+  }
+}
+
 .list {
   padding-left: 20px;
 
