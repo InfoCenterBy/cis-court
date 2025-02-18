@@ -9,7 +9,22 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 24px;
-    margin-block: 24px;
+    margin-block: 32px;
+
+    @media (max-width: 576px) {
+      row-gap: 8px;
+      column-gap: 180px;
+    }
+  }
+
+  &__column {
+    font-weight: 500;
+  }
+
+  &__column:last-child {
+    @media (max-width: 576px) {
+      margin-top: 24px;
+    }
   }
 
   &__title {
@@ -21,5 +36,19 @@
     width: 74px;
     height: 74px;
     flex-shrink: 0;
+  }
+
+  &__site-map {
+    font-weight: 500;
+    @media (max-width: 576px) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__copyright {
+    font-weight: 500;
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
   }
 }

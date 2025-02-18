@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   const mobileSearchContent = document.querySelector(".mobile-header__content");
   const mobileLogo = document.querySelector(".mobile-header__logo");
+  const mobileTitle = document.querySelector(".mobile-header__title");
   const body = document.body;
 
   if (menuToggle) {
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       mobileSearch.classList.add("open");
       mobileLogo.classList.add("hidden");
       menuToggle.classList.add("hidden");
+      mobileTitle.classList.add("hidden");
       mobileSearchBtn.classList.add("hidden");
       mobileSearchCloseBtn.classList.remove("hidden");
       mobileSearchContent.classList.add("w-100");
@@ -43,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
       mobileSearch.classList.remove("open");
       mobileLogo.classList.remove("hidden");
       menuToggle.classList.remove("hidden");
+      mobileTitle.classList.remove("hidden");
       mobileSearchBtn.classList.remove("hidden");
       mobileSearchCloseBtn.classList.add("hidden");
       mobileSearchContent.classList.remove("w-100");
