@@ -16,7 +16,7 @@
     <div class="d-flex align-items-center pb-4 position-relative">
       <a href="/"><img class="header__logo" src="./img/logo.png" alt="лого" /></a>
       <h1 class="color-white d-none d-lg-block fw-medium header__title">
-        Экономический Суд Содружества Независисмых Госудраств
+        Экономический Суд Содружества Независимых Государств
       </h1>
     </div>
     <nav class="header__nav d-flex align-items-center justify-content-between gap-3">
@@ -153,7 +153,7 @@
         </li>
         <li><a href="../about-court.html" class="nav__item">контакты</a></li>
       </ul>
-      <form class="header__search pb-3" action="">
+      <form class="header__search pb-2" action="">
         <input class="input" type="text" placeholder="Поиск" />
         <button type="submit"><i class="bi bi-search color-gray-dark"></i></button>
       </form>
@@ -566,7 +566,7 @@
       </div>
 
       <div class="footer__column">
-        <address class="d-flex flex-column gap-2 mb-0">
+        <address class="d-flex flex-column gap-2 mb-0 fw-medium">
           <span>220030, Республика Беларусь</span>
           <span>г. Минск, ул. Кирова 17</span>
           <span>тел.: <a class="link-white" href="tel:+375173428199">+375-17-342-81-99</a></span>
@@ -577,9 +577,10 @@
     </div>
 
     <div class="d-flex flex-column gap-3 mt-2">
-      <a class="link-white" href="#">Карта сайта</a>
+      <a class="footer__site-map link-white" href="#">Карта сайта</a>
 
-      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+      <div
+        class="footer__copyright d-flex justify-content-between align-items-center flex-wrap gap-1 gap-md-3">
         <p class="mb-0" id="year"></p>
         <p class="mb-0">
           Сайт разработан:
@@ -592,7 +593,7 @@
   </div>
 </footer>
 <script>
-  const year = new Date().getFullYear(); // Получаем текущий год
+  const year = new Date().getFullYear();
   document.getElementById("year").textContent = `${year}, Все права защищены`; 
 </script>
   </div>
