@@ -4,10 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Структура</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -165,6 +163,8 @@
 <header class="container mobile-header">
   <div class="d-flex align-items-center justify-content-between gap-3 w-100">
     <a class="mobile-header__logo" href="/"><img src="./img/mobile-logo.png" alt="лого" /></a>
+    <p class="mobile-header__title mb-0 color-white">Экономический Суд Содружества Независимых
+      Государств</p>
     <div class="mobile-header__content d-flex align-items-center gap-4">
       <form class="mobile-header__search-body w-100" action="">
         <input class="mobile-header__search-input input" type="text" placeholder="Поиск">
@@ -547,44 +547,51 @@
           <li><a class="link-white" href="#">Компетенция</a></li>
           <li><a class="link-white" href="#">Правовая основа деятельности</a></li>
           <li><a class="link-white" href="#">Судебные акты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <ul class="d-flex flex-column gap-2">
           <li><a class="link-white" href="#">Реестр судей</a></li>
           <li><a class="link-white" href="#">Члены Пленума</a></li>
           <li><a class="link-white" href="#">Отчеты о деятельности</a></li>
           <li><a class="link-white" href="#">Каталог ссылок</a></li>
         </ul>
       </div>
+
       <div class="footer__column">
         <address class="d-flex flex-column gap-2 mb-0">
           <span>220030, Республика Беларусь</span>
           <span>г. Минск, ул. Кирова 17</span>
           <span>тел.: <a class="link-white" href="tel:+375173428199">+375-17-342-81-99</a></span>
-          <span> факс: +375-17-345-81-08</span>
+          <span>факс: <a class="link-white" href="tel:+375173458108">+375-17-345-81-08</a></span>
           <span>email: <a class="link-white" href="mailto:info@eсsng.org">info@eсsng.org</a></span>
         </address>
       </div>
-      <div class="footer__column">
-        <a class="link-white fw-medium d-block mb-4" href="#">Карта сайта</a>
-        <div class="d-flex flex-column flex-wrap">
-          <p class="mb-2" id="year"></p>
-          <p class="mb-2">
-            Сайт разработан:
-          </p>
-          <p class="mb-2">
-            <a class="link-white" href="https://info-center.by">
-              РУП «Информационно-издательский центр по налогам и сборам»
-            </a>
-          </p>
-        </div>
+    </div>
+
+    <div class="d-flex flex-column gap-3 mt-2">
+      <a class="link-white" href="#">Карта сайта</a>
+
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+        <p class="mb-0" id="year"></p>
+        <p class="mb-0">
+          Сайт разработан:
+          <a class="link-white" href="https://info-center.by">
+            РУП «Информационно-издательский центр по налогам и сборам»
+          </a>
+        </p>
       </div>
     </div>
   </div>
 </footer>
 <script>
-  const year = new Date().getFullYear();
-  document.getElementById("year").textContent = `©${year}, Все права защищены`; 
+  const year = new Date().getFullYear(); // Получаем текущий год
+  document.getElementById("year").textContent = `${year}, Все права защищены`; 
 </script>
   </div>
-  <script src="./js/script.js"></script>
+  <script src="./js/bootstrap.js"></script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>
