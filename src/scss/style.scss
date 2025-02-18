@@ -1,6 +1,3 @@
-@use "../lib/swiper.css";
-@use "../lib/bootstrap.css";
-@use "../lib/bootstrap-icons.css";
 @use "normalize";
 @use "variables";
 @use "components";
@@ -17,6 +14,14 @@
 @use "sidebar-menu";
 @use "judge-register";
 @use "history";
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-VariableFont_wdth,wght.woff2") format("truetype");
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-display: swap;
+}
 
 html,
 body {

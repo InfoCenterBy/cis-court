@@ -12,10 +12,23 @@ let path = {
   },
   src: {
     html: [source_folder + "/**/*.html"],
-    css: [source_folder + "/scss/style.scss"],
-    js: [source_folder + "/js/script.js"],
+    css: [
+      source_folder + "/scss/style.scss",
+      source_folder + "/lib/swiper.css",
+      source_folder + "/lib/bootstrap.css",
+      source_folder + "/lib/bootstrap-icons.css",
+    ],
+    js: [
+      source_folder + "/js/script.js",
+      source_folder + "/lib/bootstrap.js",
+      source_folder + "/lib/swiper.js",
+    ],
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
-    fonts: source_folder + "/fonts/*.ttf",
+    fonts: [
+      source_folder + "/fonts/*.ttf",
+      source_folder + "/fonts/*.woff",
+      source_folder + "/fonts/*.woff2",
+    ],
     audio: source_folder + "/audio/*.mp3",
   },
   watch: {
