@@ -1325,6 +1325,9 @@ p {
   font-weight: 500;
   color: var(--white);
   text-transform: uppercase;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .nav__item:hover {
   color: var(--blue-light);
