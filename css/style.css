@@ -1192,6 +1192,11 @@ p {
   transition: all 0.15s linear;
   visibility: hidden;
 }
+@media (max-width: 992px) {
+  .download-card__arrow {
+    display: none;
+  }
+}
 .download-card:hover {
   color: var(--blue);
 }
@@ -1230,7 +1235,7 @@ p {
   background-image: url("../img/header-bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding-top: 70px;
+  padding-top: 80px;
   padding-inline: 0;
   display: block;
 }
@@ -1252,11 +1257,11 @@ p {
   background-color: transparent;
 }
 .header__title {
-  font-size: 32px;
+  font-size: 38px;
 }
 @media (max-width: 1790px) {
   .header__title {
-    font-size: 24px;
+    font-size: 32px;
   }
 }
 .header__logo {
@@ -1379,6 +1384,8 @@ p {
 }
 .mobile-header__title {
   font-size: clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem);
+  font-weight: 500;
+  color: var(--white);
 }
 
 .mobile-header__menu {
@@ -1499,6 +1506,8 @@ p {
   padding-block: 8px;
   color: var(--white);
   text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
 }
 .mobile-header__accordion-button::after {
   background-image: url("../img/icons/accordion-arrow.svg");
@@ -1547,6 +1556,7 @@ p {
 }
 .mobile-header__accordion-body-item {
   color: var(--white);
+  font-size: 18px;
 }
 
 @media (max-width: 992px) {
@@ -1598,7 +1608,7 @@ p {
   }
 }
 .footer__title {
-  font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem);
+  font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
   font-weight: 500;
 }
 .footer__logo {
