@@ -2,6 +2,7 @@
   background-image: url("../img/header-bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-position: 100% 100%;
   padding-top: 80px;
   padding-inline: 0;
   display: block;
@@ -25,10 +26,10 @@
   }
 
   &__title {
-    font-size: 32px;
+    font-size: 38px;
 
     @media (max-width: 1790px) {
-      font-size: 24px;
+      font-size: 32px;
     }
   }
 

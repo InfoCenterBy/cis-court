@@ -17,10 +17,6 @@
     }
   }
 
-  &__column {
-    font-weight: 500;
-  }
-
   &__column:last-child {
     @media (max-width: 576px) {
       margin-top: 24px;
@@ -28,8 +24,7 @@
   }
 
   &__title {
-    font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem);
-    font-weight: 500;
+    font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
   }
 
   &__logo {
@@ -39,14 +34,12 @@
   }
 
   &__site-map {
-    font-weight: 500;
     @media (max-width: 576px) {
       margin-bottom: 18px;
     }
   }
 
   &__copyright {
-    font-weight: 500;
     @media (max-width: 576px) {
       font-size: 12px;
     }

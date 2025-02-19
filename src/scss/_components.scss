@@ -329,6 +329,10 @@
   &__arrow {
     transition: all 0.15s linear;
     visibility: hidden;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 
   &:hover {

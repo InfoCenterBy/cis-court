@@ -18,6 +18,8 @@
 
   &__title {
     font-size: clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem);
+    font-weight: 500;
+    color: var(--white);
   }
 }
 
@@ -66,9 +68,7 @@
   width: 28px;
   height: 2px;
   background-color: var(--white);
-  transition:
-    transform 0.3s ease,
-    background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .mobile-header__menu.open .menu-bar:nth-child(1) {
@@ -122,6 +122,8 @@
   padding-block: 8px;
   color: var(--white);
   text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
 
   &::after {
     background-image: url("../img/icons/accordion-arrow.svg");
@@ -165,6 +167,7 @@
 
   &-item {
     color: var(--white);
+    font-size: 18px;
   }
 }
 
