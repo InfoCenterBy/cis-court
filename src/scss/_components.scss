@@ -84,6 +84,7 @@
   color: var(--blue);
   text-decoration-color: var(--black) !important;
   transition: all 0.15s linear;
+  word-break: break-all;
 
   &:hover {
     color: var(--black);
@@ -111,11 +112,12 @@
 }
 
 .link-with-chevron {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   position: relative;
   transition: all 0.15s linear;
+  width: fit-content;
 
   & span {
     color: var(--blue);

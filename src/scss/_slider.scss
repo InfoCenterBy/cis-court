@@ -1,0 +1,22 @@
+.slider-default {
+  width: 100%;
+  overflow: hidden;
+  height: 530px;
+
+  @media (max-width: 576px) {
+    height: 320px;
+  }
+}
+
+.default-slide {
+  padding-inline: clamp(0rem, -5.909rem + 29.55vw, 16.25rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.default-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
