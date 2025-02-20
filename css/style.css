@@ -845,6 +845,13 @@ p {
   color: var(--black);
 }
 
+.h3-title {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
 .h3-title-underline {
   font-size: 18px;
   text-transform: uppercase;
@@ -911,6 +918,7 @@ p {
           text-decoration-color: var(--black) !important;
   -webkit-transition: all 0.15s linear;
   transition: all 0.15s linear;
+  word-break: break-all;
 }
 .link-underline:hover {
   color: var(--black);
@@ -939,9 +947,9 @@ p {
 }
 
 .link-with-chevron {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -949,6 +957,9 @@ p {
   position: relative;
   -webkit-transition: all 0.15s linear;
   transition: all 0.15s linear;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .link-with-chevron span {
   color: var(--blue);
@@ -2229,6 +2240,42 @@ p {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.plenum-meeting__card {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.slider-default {
+  width: 100%;
+  overflow: hidden;
+  height: 530px;
+}
+@media (max-width: 576px) {
+  .slider-default {
+    height: 320px;
+  }
+}
+
+.default-slide {
+  padding-inline: clamp(0rem, -5.909rem + 29.55vw, 16.25rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.default-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @font-face {
