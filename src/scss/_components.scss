@@ -42,6 +42,11 @@
   color: var(--white);
   line-height: 22px;
   transition: all 0.15s linear;
+  width: fit-content;
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 
   &:hover {
     background-color: var(--blue-dark);
@@ -50,6 +55,30 @@
   &:active {
     background-color: var(--blue-light);
     color: var(--black);
+  }
+}
+
+.button-secondary {
+  padding: 10px 20px;
+  background-color: var(--gray-light);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  line-height: 22px;
+  transition: all 0.15s linear;
+  width: fit-content;
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: var(--blue-dark);
+    color: var(--white);
+  }
+
+  &:active {
+    background-color: var(--blue);
+    color: var(--white);
   }
 }
 
@@ -83,11 +112,26 @@
   background-color: var(--blue);
 }
 
+.form {
+  background-color: var(--gray-light);
+  padding: 24px 32px;
+
+  @media (max-width: 768px) {
+    padding: 24px 16px;
+  }
+}
+
+.form-label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
 .input {
   padding: 10px;
   background-color: var(--white);
   height: 44px;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
 }
 

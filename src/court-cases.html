@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("./components/_head.html", { "title": "Судебные дела"})
+
+<body>
+  <div class="wrapper">
+    @@include("./components/_header.html")
+    <main class="container">
+      <div class="page">
+        <nav>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+            <li class="breadcrumbs__item active">Судебные дела</li>
+          </ul>
+        </nav>
+        <h2 class="h2-title mb-4">Судебные дела</h2>
+        <div class="row gx-5">
+          <section class="col-12 col-lg-9 order-2 order-lg-1">
+            <form class="form" action="">
+              <div class="row g-3 gx-lg-4 gx-xl-5 mb-3 mb-md-4 row-cols-1 row-cols-md-2">
+                <div class="col">
+                  <div>
+                    <label class="form-label" for="">Дата</label>
+                    <div class="d-flex gap-4 flex-wrap flex-md-nowrap">
+                      <input class="input" type="text" placeholder="от">
+                      <input class="input" type="text" placeholder="до">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <label class="form-label" for="">Номер</label>
+                    <div>
+                      <input class="input" type="text" placeholder="Введите номер">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-3 gx-lg-4 gx-xl-5 mb-3 mb-md-4 row-cols-1 row-cols-md-2">
+                <div class="col">
+                  <div>
+                    <label class="form-label" for="">Предмет иска</label>
+                    <div>
+                      <input class="input" type="text" placeholder="Номер">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-none d-md-block">
+                    <label class="form-label" for="">Краткое содержание</label>
+                    <div>
+                      <input class="input" type="text" placeholder="Введите текст">
+                    </div>
+                  </div>
+                  <div class="d-block d-md-none">
+                    <label class="form-label" for="">Краткое содержание</label>
+                    <div>
+                      <textarea rows="4" class="bg-white w-100 p-2 color-black" type="text"
+                        placeholder="Введите текст"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-3 gx-lg-4 gx-xl-5 mb-3 mb-md-4 row-cols-1 row-cols-md-2">
+                <div class="col">
+                  <div>
+                    <label class="form-label" for="">Заявитель</label>
+                    <div>
+                      <input class="input" type="text" placeholder="Введите данные">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <label class="form-label" for="">Ответчик</label>
+                    <div>
+                      <input class="input" type="text" placeholder="Введите данные">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex gap-4 gap-lg-5 flex-wrap flex-md-nowrap mt-4 mt-md-3">
+                <button class="button" type="submit">Искать</button>
+                <button class="button-secondary" type="reset">Очистить</button>
+              </div>
+            </form>
+          </section>
+          <aside class="col-12 col-lg-3 order-1 order-lg-2">
+            <nav class="sidebar">
+              <ul class="sidebar__menu">
+                @@include("./components/_court-cases-sidebar.html")
+              </ul>
+            </nav>
+          </aside>
+        </div>
+      </div>
+    </main>
+    @@include("./components/_footer.html")
+  </div>
+  @@include("./components/_script.html")
+</body>
+
+</html>
