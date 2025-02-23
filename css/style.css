@@ -880,6 +880,14 @@ p {
   line-height: 22px;
   -webkit-transition: all 0.15s linear;
   transition: all 0.15s linear;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 576px) {
+  .button {
+    width: 100%;
+  }
 }
 .button:hover {
   background-color: var(--blue-dark);
@@ -887,6 +895,32 @@ p {
 .button:active {
   background-color: var(--blue-light);
   color: var(--black);
+}
+
+.button-secondary {
+  padding: 10px 20px;
+  background-color: var(--gray-light);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  line-height: 22px;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 576px) {
+  .button-secondary {
+    width: 100%;
+  }
+}
+.button-secondary:hover {
+  background-color: var(--blue-dark);
+  color: var(--white);
+}
+.button-secondary:active {
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 .list {
@@ -916,11 +950,27 @@ p {
   background-color: var(--blue);
 }
 
+.form {
+  background-color: var(--gray-light);
+  padding: 24px 32px;
+}
+@media (max-width: 768px) {
+  .form {
+    padding: 24px 16px;
+  }
+}
+
+.form-label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
 .input {
   padding: 10px;
   background-color: var(--white);
   height: 44px;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
 }
 
@@ -2320,6 +2370,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100%;
+  overflow: hidden;
 }
 
 main {

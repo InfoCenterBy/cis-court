@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Председатели и секретари Пленума Экономического Суда СНГ</title>
+  <title>Судебные дела</title>
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/bootstrap-icons.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -446,46 +446,101 @@
         <nav>
           <ul class="breadcrumbs">
             <li class="breadcrumbs__item"><a href="/">Главная</a></li>
-            <li class="breadcrumbs__item"><a href="plenum.html">Пленум</a></li>
-            <li class="breadcrumbs__item"><a href="plenum-activity-info.html">Информация о деятельности
-                Пленума</a></li>
-            <li class="breadcrumbs__item active">Председатели и секретари Пленума Экономического Суда СНГ</li>
+            <li class="breadcrumbs__item active">Судебные дела</li>
           </ul>
         </nav>
-        <h2 class="h2-title mb-4">Председатели и секретари Пленума Экономического Суда СНГ</h2>
-
-        <section>
-          <div class="mb-40">
-            <h3 class="h3-title-underline mb-2">Председатели Пленума Экономического Суда СНГ:
-            </h3>
-            <ul class="list">
-              <li><span class="fw-medium">Л. А. Дашук</span> (1994 — 1996 гг.),</li>
-              <li><span class="fw-medium">Д. Н. Сафиуллин</span> (1996 — 1998 гг.),</li>
-              <li><span class="fw-medium">А. Б. Каженов</span> (1998 — 2004 гг.),</li>
-              <li><span class="fw-medium">А. Ш. Керимбаева</span> (2004 — 2008гг),</li>
-              <li><span class="fw-medium">Ф.Абдуллоев</span> (2008 — 2011 гг),</li>
-              <li><span class="fw-medium">Л. Э. Каменкова</span> (2011 г. — 2023 г.),</li>
-              <li><span class="fw-medium">А. В. Плотников</span> (2023 г. — н.в.).</li>
-            </ul>
-          </div>
-
-          <div class="mb-40">
-            <h3 class="h3-title-underline mb-2">Cекретари Пленума Экономического Суда СНГ:
-            </h3>
-            <ul class="list">
-              <li><span class="fw-medium">А. Е. Березий</span> (1994 — 1995 гг.),</li>
-              <li><span class="fw-medium">Г. В. Симонян</span> (1995 — 2004 гг.),</li>
-              <li><span class="fw-medium">А. Б. Каженов</span> (1998 — 2004 гг.),</li>
-              <li><span class="fw-medium">Т. Н. Молчанова</span> (2004 — 2009 г.),</li>
-              <li><span class="fw-medium">Л. Э. Каменкова</span> (2009 г. — 2012 г.),</li>
-              <li><span class="fw-medium">С. Ж. Жолдыбаев</span> (2012 г. — 2013 г.),
-              </li>
-              <li><span class="fw-medium">Э. Н. Нагорная</span> (2013 г. — 2023 г.).</li>
-            </ul>
-          </div>
-
-        </section>
-
+        <h2 class="h2-title mb-4">Судебные дела</h2>
+        <div class="row gx-5">
+          <section class="col-12 col-lg-9 order-2 order-lg-1">
+            <form class="form" action="">
+              <div class="row g-3 gx-lg-4 gx-xl-5 mb-3 mb-md-4 row-cols-1 row-cols-md-2">
+                <div class="col">
+                  <div>
+                    <label class="form-label" for="">Дата</label>
+                    <div class="d-flex gap-4 flex-wrap flex-md-nowrap">
+                      <input class="input" type="text" placeholder="от">
+                      <input class="input" type="text" placeholder="до">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <label class="form-label" for="">Номер</label>
+                    <div>
+                      <input class="input" type="text" placeholder="Введите номер">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-3 gx-lg-4 gx-xl-5 mb-3 mb-md-4 row-cols-1 row-cols-md-2">
+                <div class="col">
+                  <div>
+                    <label class="form-label" for="">Предмет иска</label>
+                    <div>
+                      <input class="input" type="text" placeholder="Номер">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-none d-md-block">
+                    <label class="form-label" for="">Краткое содержание</label>
+                    <div>
+                      <input class="input" type="text" placeholder="Введите текст">
+                    </div>
+                  </div>
+                  <div class="d-block d-md-none">
+                    <label class="form-label" for="">Краткое содержание</label>
+                    <div>
+                      <textarea rows="4" class="bg-white w-100 p-2 color-black" type="text"
+                        placeholder="Введите текст"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-3 gx-lg-4 gx-xl-5 mb-3 mb-md-4 row-cols-1 row-cols-md-2">
+                <div class="col">
+                  <div>
+                    <label class="form-label" for="">Заявитель</label>
+                    <div>
+                      <input class="input" type="text" placeholder="Введите данные">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <label class="form-label" for="">Ответчик</label>
+                    <div>
+                      <input class="input" type="text" placeholder="Введите данные">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex gap-4 gap-lg-5 flex-wrap flex-md-nowrap mt-4 mt-md-3">
+                <button class="button" type="submit">Искать</button>
+                <button class="button-secondary" type="reset">Очистить</button>
+              </div>
+            </form>
+          </section>
+          <aside class="col-12 col-lg-3 order-1 order-lg-2">
+            <nav class="sidebar">
+              <ul class="sidebar__menu">
+                <li class="sidebar__item">
+  <a href="court-cases.html" class="sidebar__link">Судебные дела</a>
+  <i class="bi bi-chevron-right"></i>
+</li><li class="sidebar__item">
+  <a href="plenum-activity-info.html" class="sidebar__link">Информация о судебных делах</a>
+  <i class="bi bi-chevron-right"></i>
+</li><li class="sidebar__item">
+  <a href="plenum-members.html" class="sidebar__link">Судебные акты</a>
+  <i class="bi bi-chevron-right"></i>
+</li><li class="sidebar__item">
+  <a href="plenum-resolutions.html" class="sidebar__link">Аннотации решений</a>
+  <i class="bi bi-chevron-right"></i>
+</li>
+              </ul>
+            </nav>
+          </aside>
+        </div>
       </div>
     </main>
     <footer class="container-fluid footer">
