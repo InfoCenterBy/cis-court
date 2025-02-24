@@ -453,6 +453,13 @@
   display: none;
   font-size: 18px;
   z-index: 100000;
+
+  @media (max-width: 768px) {
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .scroll-to-top path {
