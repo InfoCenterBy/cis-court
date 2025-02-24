@@ -1329,6 +1329,14 @@ p {
   font-size: 18px;
   z-index: 100000;
 }
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+  }
+}
 
 .scroll-to-top path {
   -webkit-transform: translateY(-2px);
