@@ -871,6 +871,7 @@ p {
   color: var(--black);
   border-bottom: 3px solid var(--blue);
   padding-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .button {
@@ -883,6 +884,7 @@ p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  height: 42px;
 }
 @media (max-width: 576px) {
   .button {
@@ -908,6 +910,7 @@ p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  height: 42px;
 }
 @media (max-width: 576px) {
   .button-secondary {
@@ -925,6 +928,7 @@ p {
 
 .list {
   padding-left: 20px;
+  margin-bottom: 8px;
 }
 .list li {
   position: relative;
@@ -1278,6 +1282,29 @@ p {
 }
 .download-card p {
   margin: 0;
+}
+
+.court-case-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--gray);
+  cursor: pointer;
+}
+.court-case-card:hover .court-case-preview {
+  color: var(--blue);
+}
+.court-case-preview {
+  margin: 0;
+  font-weight: 500;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
 }
 
 .mb-80 {
