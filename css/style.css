@@ -1307,6 +1307,46 @@ p {
   transition: all 0.15s linear;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid var(--white);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--blue);
+  cursor: pointer;
+  display: none;
+  font-size: 18px;
+  z-index: 100000;
+}
+
+.scroll-to-top path {
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+  fill: var(--white);
+}
+
+@media (hover: hover) {
+  .scroll-to-top:hover {
+    background-color: var(--blue-dark);
+  }
+}
+@media (hover: nonve) {
+  .scroll-to-top:active {
+    background-color: var(--blue-dark);
+  }
+}
 .mb-80 {
   margin-bottom: 80px;
 }
