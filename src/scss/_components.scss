@@ -34,6 +34,7 @@
   color: var(--black);
   border-bottom: 3px solid var(--blue);
   padding-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .button {
@@ -43,6 +44,7 @@
   line-height: 22px;
   transition: all 0.15s linear;
   width: fit-content;
+  height: 42px;
 
   @media (max-width: 576px) {
     width: 100%;
@@ -66,6 +68,7 @@
   line-height: 22px;
   transition: all 0.15s linear;
   width: fit-content;
+  height: 42px;
 
   @media (max-width: 576px) {
     width: 100%;
@@ -84,6 +87,7 @@
 
 .list {
   padding-left: 20px;
+  margin-bottom: 8px;
 
   & li {
     position: relative;
@@ -409,5 +413,61 @@
 
   & p {
     margin: 0;
+  }
+}
+
+.court-case {
+  &-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gray);
+    cursor: pointer;
+
+    &:hover .court-case-preview {
+      color: var(--blue);
+    }
+  }
+
+  &-preview {
+    margin: 0;
+    font-weight: 500;
+    transition: all 0.15s linear;
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--white);
+  align-items: center;
+  background-color: var(--blue);
+
+  cursor: pointer;
+  display: none;
+  font-size: 18px;
+  z-index: 100000;
+}
+
+.scroll-to-top path {
+  transform: translateY(-2px);
+  fill: var(--white);
+}
+
+@media (hover: hover) {
+  .scroll-to-top:hover {
+    background-color: var(--blue-dark);
+  }
+}
+
+@media (hover: nonve) {
+  .scroll-to-top:active {
+    background-color: var(--blue-dark);
   }
 }

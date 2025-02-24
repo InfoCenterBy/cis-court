@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("./components/_head.html", { "title": "Дело №№ 01–1/1–24"})
+
+<body>
+  <div class="wrapper">
+    @@include("./components/_header.html")
+    <main class="container">
+      <div class="page">
+        <nav>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="court-cases.html">Судебные дела</a></li>
+            <li class="breadcrumbs__item"><a href="court-cases-info.html">Информация о судебных делах</a></li>
+            <li class="breadcrumbs__item active">Дело №№ 01–1/1–24</li>
+          </ul>
+        </nav>
+        <h2 class="h2-title mb-4">Дело №№ 01–1/1–24</h2>
+
+        <section>
+          <div class="d-flex flex-column gap-3 mb-3">
+            <p class="m-0 fw-medium">O толковании статьи 84 Конвенции о правовой помощи и правовых отношениях по
+              гражданским, семейным и уголовным делам от 22 января 1993 года и статьи 121 Конвенции о правовой помощи
+              и
+              правовых отношениях по гражданским, семейным и уголовным делам от 7 октября 2002 года
+            </p>
+            <p class="m-0">
+              <span class="fw-medium">Заявитель: </span><span>Исполнительный комитет Содружества Независимых
+                Государств
+              </span>
+            </p>
+            <p class="color-gray-dark m-0 fs-14">
+              16.05.2024
+            </p>
+          </div>
+
+          <p class="mb-3">Описательный текст (по необходимости)</p>
+
+          <a class="download-card" href="#">
+            <i class="color-blue fs-32 bi bi-file-earmark-pdf"></i>
+            <div class="d-flex justify-content-between w-100 align-items-center gap-2">
+              <p>
+                Решение Межгосударственного Совета Евразийского экономического сообщества от 27 апреля
+                2003 года № 123 «Об организации функционирования Суда Евразийского экономического
+                сообщества»
+              </p>
+              <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+            </div>
+          </a>
+        </section>
+
+      </div>
+    </main>
+    @@include("./components/_footer.html")
+  </div>
+  @@include("./components/_script.html")
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("./components/_head.html", { "title": "Аннотации решений"})
+
+<body>
+  <div class="wrapper">
+    @@include("./components/_header.html")
+    <main class="container">
+      <div class="page">
+        <nav>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="court-cases.html">Судебные дела</a></li>
+            <li class="breadcrumbs__item active">Аннотации решений</li>
+          </ul>
+        </nav>
+        <h2 class="h2-title mb-4">Аннотации решений</h2>
+        <div class="row gx-5">
+          <section class="col-12 col-lg-9 order-2 order-lg-1">
+            <p class="mb-40">
+              На данной странице представлены аннотации всех решений Экономического Суда СНГ за период
+              его деятельности. Страница обновляется после принятия Судом каждого нового решения.
+            </p>
+            <div class="d-flex flex-column gap-3">
+              <a class="download-card" href="solutions-annotations-detail.html">
+                <i class="color-blue fs-32 bi bi-link-45deg"></i>
+                <div class="d-flex justify-content-between w-100 align-items-center gap-2">
+                  <p>Аннотации судебных актов Экономического Суда СНГ за 1992-2006 годы
+                  </p>
+                  <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+                </div>
+              </a>
+              <a class="download-card" href="solutions-annotations-detail.html">
+                <i class="color-blue fs-32 bi bi-link-45deg"></i>
+                <div class="d-flex justify-content-between w-100 align-items-center gap-2">
+                  <p>Аннотации судебных актов Экономического Суда СНГ за 2007 год
+                  </p>
+                  <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+                </div>
+              </a>
+              <a class="download-card" href="solutions-annotations-detail.html">
+                <i class="color-blue fs-32 bi bi-link-45deg"></i>
+                <div class="d-flex justify-content-between w-100 align-items-center gap-2">
+                  <p>Аннотации судебных актов Экономического Суда СНГ за 2008 год
+                  </p>
+                  <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+                </div>
+              </a>
+              <a class="download-card" href="#">
+                <i class="color-blue fs-32 bi bi-link-45deg"></i>
+                <div class="d-flex justify-content-between w-100 align-items-center gap-2">
+                  <p>Аннотации судебных актов Экономического Суда СНГ за 2009 год
+                  </p>
+                  <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+                </div>
+              </a>
+              <a class="download-card" href="#">
+                <i class="color-blue fs-32 bi bi-link-45deg"></i>
+                <div class="d-flex justify-content-between w-100 align-items-center gap-2">
+                  <p>Аннотации судебных актов Экономического Суда СНГ за 20010 год
+                  </p>
+                  <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+                </div>
+              </a>
+            </div>
+          </section>
+          <aside class="col-12 col-lg-3 order-1 order-lg-2">
+            <nav class="sidebar">
+              <ul class="sidebar__menu">
+                @@include("./components/_court-cases-sidebar.html")
+              </ul>
+            </nav>
+          </aside>
+        </div>
+      </div>
+    </main>
+    @@include("./components/_footer.html")
+  </div>
+  @@include("./components/_script.html")
+</body>
+
+</html>
