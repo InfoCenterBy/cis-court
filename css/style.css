@@ -1355,6 +1355,24 @@ p {
     background-color: var(--blue-dark);
   }
 }
+.table-default thead {
+  background-color: var(--gray-light);
+}
+.table-default thead th {
+  font-weight: 500;
+  padding: 8px;
+}
+.table-default tbody tr {
+  border-bottom: 1px solid var(--gray);
+}
+.table-default tbody th {
+  font-weight: 400;
+}
+.table-default tbody td,
+.table-default tbody th {
+  padding: 8px;
+}
+
 .mb-80 {
   margin-bottom: 80px;
 }
@@ -1377,6 +1395,15 @@ p {
 
 .hidden {
   display: none !important;
+}
+
+.w-100-to-75 {
+  width: 75%;
+}
+@media (max-width: 768px) {
+  .w-100-to-75 {
+    width: 100%;
+  }
 }
 
 .header {
