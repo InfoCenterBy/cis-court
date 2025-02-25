@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("./components/_head.html", { "title": "Судебная статистика "})
+
+<body>
+  <div class="wrapper">
+    @@include("./components/_header.html")
+    <main class="container">
+      <div class="page">
+        <nav>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="analitics.html">Аналитика</a></li>
+            <li class="breadcrumbs__item active">Судебная статистика </li>
+          </ul>
+        </nav>
+        <h2 class="h2-title mb-4">Судебная статистика </h2>
+        <div class="row gx-5">
+          <section class="col-12 col-lg-9 order-2 order-lg-1">
+            <div class="d-flex flex-column gap-3">
+              <a class="download-card" href="#">
+                <i class="color-blue fs-32 bi bi-file-earmark-pdf"></i>
+                <div class="d-flex justify-content-between w-100 align-items-center gap-2">
+                  <p>Перечень дел рассмотренных Экономическим Судом Содружества Независимых Государств в 1994
+                    — 2023 годах</p>
+                  <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+                </div>
+              </a>
+              <a class="download-card" href="#">
+                <i class="color-blue fs-32 bi bi-file-earmark-pdf"></i>
+                <div class="d-flex justify-content-between w-100 align-items-center gap-2">
+                  <p>Сведения о делах, рассмотренных Экономическим Судом Содружества Независимых Государств в
+                    1994 — 2023 годах</p>
+                  <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+                </div>
+              </a>
+              <a class="download-card" href="#">
+                <i class="color-blue fs-32 bi bi-file-earmark-pdf"></i>
+                <div class="d-flex justify-content-between w-100 align-items-center gap-2">
+                  <p>Сведения о субъектах обращения в Экономический Суд Содружества Независимых Государств в
+                    1994 — 2023 годах</p>
+                  <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+                </div>
+              </a>
+              <a class="download-card" href="#">
+                <i class="color-blue fs-32 bi bi-file-earmark-pdf"></i>
+                <div class="d-flex justify-content-between w-100 align-items-center gap-2">
+                  <p>Сведения о категориях дел о толковании, рассмотренных Экономическим Судом Содружества
+                    Независимых Государств в 1994 — 2022 годах</p>
+                  <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+                </div>
+              </a>
+              <a class="download-card" href="#">
+                <i class="color-blue fs-32 bi bi-file-earmark-pdf"></i>
+                <div class="d-flex justify-content-between w-100 align-items-center gap-2">
+                  <p>Сведения о категориях дел по спорам, рассмотренных Экономическим Судом Содружества
+                    Независимых Государств в 1994 — 2023 годах</p>
+                  <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+                </div>
+              </a>
+              <a class="download-card" href="#">
+                <i class="color-blue fs-32 bi bi-file-earmark-pdf"></i>
+                <div class="d-flex justify-content-between w-100 align-items-center gap-2">
+                  <p>Сведения о заявлениях и запросах, поступивших в Экономический Суд Содружества Независимых
+                    Государств в 1994 — 2023 годах</p>
+                  <i class="color-blue fs-32 bi bi-arrow-right download-card__arrow"></i>
+                </div>
+              </a>
+            </div>
+          </section>
+          <aside class="col-12 col-lg-3 order-1 order-lg-2">
+            <nav class="sidebar">
+              <ul class="sidebar__menu">
+                @@include("./components/_analitics-sidebar.html")
+              </ul>
+            </nav>
+          </aside>
+        </div>
+      </div>
+    </main>
+    @@include("./components/_footer.html")
+  </div>
+  @@include("./components/_script.html")
+</body>
+
+</html>

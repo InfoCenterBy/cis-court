@@ -478,3 +478,29 @@
     background-color: var(--blue-dark);
   }
 }
+
+.table-default {
+  & thead {
+    background-color: var(--gray-light);
+
+    & th {
+      font-weight: 500;
+      padding: 8px;
+    }
+  }
+
+  & tbody {
+    & tr {
+      border-bottom: 1px solid var(--gray);
+    }
+
+    & th {
+      font-weight: 400;
+    }
+
+    & td,
+    th {
+      padding: 8px;
+    }
+  }
+}

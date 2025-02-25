@@ -21,3 +21,11 @@
 .hidden {
   display: none !important;
 }
+
+.w-100-to-75 {
+  width: 75%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
