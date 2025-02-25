@@ -4,19 +4,30 @@
 
 .nav-pills {
   gap: 16px;
-}
-
-.nav-pills {
+  width: 100%;
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  white-space: nowrap;
+  flex-wrap: wrap;
 }
 
-.nav-pills::-webkit-scrollbar {
-  display: none;
+.nav-pills .nav-item {
+  @media (max-width: 576px) {
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.nav-pills .nav-link {
+  color: var(--blue);
+  text-transform: uppercase;
+  border-radius: 0;
+  font-weight: 500;
+  border: 1px solid var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
 }
 
 .nav-pills .nav-link.active,

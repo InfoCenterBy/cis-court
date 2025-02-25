@@ -20,6 +20,10 @@
   &__column:last-child {
     @media (max-width: 576px) {
       margin-top: 24px;
+      padding-block: 16px;
+      border-bottom: 1px solid var(--white);
+      border-top: 1px solid var(--white);
+      width: 100%;
     }
   }
 
