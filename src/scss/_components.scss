@@ -34,7 +34,7 @@
   color: var(--black);
   border-bottom: 3px solid var(--blue);
   padding-bottom: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .button {
@@ -118,7 +118,7 @@
 
 .form {
   background-color: var(--gray-light);
-  padding: 24px 32px;
+  padding: 24px 32px 32px;
 
   @media (max-width: 768px) {
     padding: 24px 16px;
@@ -228,12 +228,9 @@
 .edition-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-inline: clamp(0.125rem, -0.193rem + 1.59vw, 1rem);
   gap: 16px;
-
-  & p {
-    margin-bottom: 0;
-  }
 
   &:hover {
     cursor: pointer;
@@ -252,6 +249,10 @@
   height: auto;
   overflow: hidden;
 
+  @media (max-width: 576px) {
+    max-width: clamp(6.25rem, -0.568rem + 34.09vw, 25rem);
+  }
+
   & img {
     transition: all 0.15s linear;
     transform: scale(1);
@@ -265,6 +266,11 @@
   font-size: 18px;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 0;
+
+  @media (max-width: 576px) {
+    font-size: 16px;
+  }
 }
 
 .publication-card {
@@ -311,6 +317,7 @@
 .information-partner-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
 
   & p {
@@ -333,6 +340,11 @@
 .information-partner-img-container {
   height: auto;
   overflow: hidden;
+  max-width: 300px;
+
+  @media (max-width: 768px) {
+    max-width: clamp(10rem, 4.545rem + 27.27vw, 25rem);
+  }
 
   & img {
     transition: all 0.15s linear;
@@ -347,6 +359,10 @@
   font-size: 18px;
   font-weight: 500;
   text-align: center;
+
+  @media (max-width: 576px) {
+    font-size: 16px;
+  }
 }
 
 .catalog-link {
