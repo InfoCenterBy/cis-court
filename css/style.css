@@ -871,7 +871,7 @@ p {
   color: var(--black);
   border-bottom: 3px solid var(--blue);
   padding-bottom: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .button {
@@ -956,7 +956,7 @@ p {
 
 .form {
   background-color: var(--gray-light);
-  padding: 24px 32px;
+  padding: 24px 32px 32px;
 }
 @media (max-width: 768px) {
   .form {
@@ -1077,11 +1077,11 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-inline: clamp(0.125rem, -0.193rem + 1.59vw, 1rem);
   gap: 16px;
-}
-.edition-card p {
-  margin-bottom: 0;
 }
 .edition-card:hover {
   cursor: pointer;
@@ -1099,6 +1099,11 @@ p {
   height: auto;
   overflow: hidden;
 }
+@media (max-width: 576px) {
+  .edition-img-container {
+    max-width: clamp(6.25rem, -0.568rem + 34.09vw, 25rem);
+  }
+}
 .edition-img-container img {
   -webkit-transition: all 0.15s linear;
   transition: all 0.15s linear;
@@ -1114,6 +1119,12 @@ p {
   font-size: 18px;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .edition-title {
+    font-size: 16px;
+  }
 }
 
 .publication-card {
@@ -1176,6 +1187,9 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 16px;
 }
 .information-partner-card p {
@@ -1196,6 +1210,12 @@ p {
 .information-partner-img-container {
   height: auto;
   overflow: hidden;
+  max-width: 300px;
+}
+@media (max-width: 768px) {
+  .information-partner-img-container {
+    max-width: clamp(10rem, 4.545rem + 27.27vw, 25rem);
+  }
 }
 .information-partner-img-container img {
   -webkit-transition: all 0.15s linear;
@@ -1212,6 +1232,11 @@ p {
   font-size: 18px;
   font-weight: 500;
   text-align: center;
+}
+@media (max-width: 576px) {
+  .information-partner-title {
+    font-size: 16px;
+  }
 }
 
 .catalog-link {
