@@ -6,6 +6,12 @@
   }
 
   @media (max-width: 768px) {
-    max-width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 576px) {
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
