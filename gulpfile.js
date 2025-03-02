@@ -20,6 +20,8 @@ let path = {
     ],
     js: [
       source_folder + "/js/script.js",
+      source_folder + "/js/slider-default.js",
+      source_folder + "/js/slider-partners.js",
       source_folder + "/lib/bootstrap.js",
       source_folder + "/lib/swiper.js",
     ],

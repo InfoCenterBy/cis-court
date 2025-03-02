@@ -1,0 +1,32 @@
+.search-result-card {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.search-result-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black);
+  transition: all 0.15s linear;
+  margin-bottom: 8px;
+  display: block;
+  display: -webkit-box;
+  line-clamp: 5;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover {
+    color: var(--blue);
+  }
+}
+
+.search-result-text {
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
