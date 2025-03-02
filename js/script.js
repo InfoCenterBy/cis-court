@@ -1,38 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const swiperMainPartner = new Swiper(".swiper.slider-partner", {
-    direction: "horizontal",
-    loop: true,
-    allowTouchMove: true,
-    autoplay: {
-      delay: 2000,
-      pauseOnMouseEnter: true,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 30,
-      },
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".mobile-header__menu");
   const mobileNav = document.querySelector(".mobile-header__nav");
   const mobileSearch = document.querySelector(".mobile-header__search-body");
@@ -88,22 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const swiperDefault = new Swiper(".swiper.slider-default", {
-    direction: "horizontal",
-    loop: true,
-    allowTouchMove: true,
-    spaceBetween: 1,
-    slidesPerView: 1,
-    centeredSlides: true,
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   const scrollToTopButton = document.getElementById("scroll-to-top");
 
   if (scrollToTopButton) {
@@ -120,3 +70,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+const clearIcon = document.querySelector("#clear-icon");
+const searchInput = document.querySelector("#search-input");
+
+if (clearIcon && searchInput) {
+  clearIcon.addEventListener("click", () => {
+    searchInput.value = "";
+    clearIcon.classList.add("hidden");
+  });
+
+  searchInput.addEventListener("input", () => {
+    if (searchInput.value.length > 0) {
+      clearIcon.classList.remove("hidden");
+    } else {
+      clearIcon.classList.add("hidden");
+    }
+  });
+}

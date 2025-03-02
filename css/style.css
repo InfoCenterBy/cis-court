@@ -1036,7 +1036,7 @@ p {
 .input {
   padding: 10px;
   background-color: var(--white);
-  height: 44px;
+  height: 42px;
   font-size: 16px;
   width: 100%;
 }
@@ -1467,6 +1467,19 @@ p {
 .table-default tbody td,
 .table-default tbody th {
   padding: 8px;
+}
+
+.clear-icon {
+  position: absolute;
+  top: -3px;
+  right: 10px;
+  padding: 4px;
+  cursor: pointer;
+  color: var(--gray-dark);
+  font-size: 30px;
+}
+.clear-icon:hover {
+  color: var(--black);
 }
 
 .mb-80 {
@@ -2597,6 +2610,97 @@ p {
     margin: 0 auto;
     margin-bottom: 24px;
   }
+}
+
+.search-result-card {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.search-result-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black);
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  margin-bottom: 8px;
+  display: block;
+  display: -webkit-box;
+  line-clamp: 5;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.search-result-title:hover {
+  color: var(--blue);
+}
+
+.search-result-text {
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page-item.disabled .page-link {
+  color: var(--gray-dark);
+}
+.page-item.disabled .page-link:hover {
+  cursor: not-allowed;
+}
+
+.page-item:not(:first-child):not(:last-child) .page-link {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page-item:not(:first-child):not(:last-child) .page-link:hover {
+  background-color: var(--blue-dark);
+  color: var(--white);
+}
+
+.page-item:not(:first-child):not(:last-child) {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.page-item:not(:first-child):not(:last-child).active {
+  background-color: var(--blue) !important;
+}
+.page-item:not(:first-child):not(:last-child).active .page-link {
+  color: var(--white);
+}
+.page-item:not(:first-child):not(:last-child).disabled {
+  background-color: var(--gray);
+}
+.page-item:not(:first-child):not(:last-child).disabled .page-link {
+  color: var(--white);
+}
+
+.page-item:first-child:not(.disabled) .page-link,
+.page-item:last-child:not(.disabled) .page-link {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.page-item:first-child:not(.disabled) .page-link:hover,
+.page-item:last-child:not(.disabled) .page-link:hover {
+  color: var(--blue-dark);
+}
+.page-item:first-child:not(.disabled) .page-link:active,
+.page-item:last-child:not(.disabled) .page-link:active {
+  color: var(--blue);
 }
 
 @font-face {
