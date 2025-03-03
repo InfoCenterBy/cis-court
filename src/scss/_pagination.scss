@@ -1,4 +1,16 @@
-.pagination {
+.page-link {
+  border: none;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.page-link:not(:first-child):not(:last-child) {
+  box-shadow: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-item.disabled .page-link {
@@ -27,15 +39,15 @@
   box-shadow: none;
 
   &.active {
-    background-color: var(--blue) !important;
     & .page-link {
+      background-color: var(--blue);
       color: var(--white);
     }
   }
 
   &.disabled {
-    background-color: var(--gray);
     & .page-link {
+      background-color: var(--gray);
       color: var(--white);
     }
   }
@@ -44,6 +56,8 @@
 .page-item:first-child:not(.disabled) .page-link,
 .page-item:last-child:not(.disabled) .page-link {
   box-shadow: none;
+  background-color: transparent;
+  margin-inline: 10px;
 
   &:hover {
     color: var(--blue-dark);
@@ -51,5 +65,18 @@
 
   &:active {
     color: var(--blue);
+  }
+}
+
+.page-item:first-child.disabled .page-link,
+.page-item:last-child.disabled .page-link {
+  background-color: transparent;
+  border-radius: 0;
+  color: var(--gray-dark);
+  margin-inline: 10px;
+  box-shadow: none;
+
+  &:hover {
+    cursor: not-allowed;
   }
 }
