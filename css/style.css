@@ -886,6 +886,7 @@ p {
   width: fit-content;
   height: 42px;
   position: relative;
+  text-align: center;
 }
 @media (max-width: 576px) {
   .button {
@@ -954,6 +955,7 @@ p {
   width: fit-content;
   height: 42px;
   position: relative;
+  text-align: center;
 }
 @media (max-width: 576px) {
   .button-secondary {
@@ -1573,6 +1575,14 @@ p {
   .w-100-to-45 {
     width: 100%;
   }
+}
+
+.fs-120 {
+  font-size: clamp(5rem, 4.091rem + 4.55vw, 7.5rem);
+}
+
+.pt-180 {
+  padding-top: clamp(6.25rem, 4.432rem + 9.09vw, 11.25rem);
 }
 
 .header {
