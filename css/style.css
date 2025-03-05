@@ -1737,32 +1737,12 @@ p {
 }
 .mobile-header {
   display: none;
-  background-image: url("../img/mobile-header-bg.png");
+  background-image: url("../img/mobile-header-bg2.png");
   background-size: 100% 100%;
   background-color: var(--blue);
   padding-block: 8px;
-  height: 72px;
+  height: 100px;
   position: relative;
-}
-@media (max-width: 992px) {
-  .mobile-header {
-    background-size: 63% 100%;
-    background-position: 47% 50%;
-    background-repeat: no-repeat;
-  }
-}
-@media (max-width: 768px) {
-  .mobile-header {
-    background-size: 75% 100%;
-    background-position: 45% 50%;
-    background-repeat: no-repeat;
-  }
-}
-@media (max-width: 576px) {
-  .mobile-header {
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
 }
 .mobile-header__logo {
   width: 56px;
