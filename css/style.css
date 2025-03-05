@@ -1739,10 +1739,16 @@ p {
   display: none;
   background-image: url("../img/mobile-header-bg2.png");
   background-size: 100% 100%;
+  background-repeat: no-repeat;
   background-color: var(--blue);
   padding-block: 8px;
   height: 100px;
   position: relative;
+}
+@media (max-width: 576px) {
+  .mobile-header {
+    background-image: url("../img/mobile-header-bg.png");
+  }
 }
 .mobile-header__logo {
   width: 56px;
