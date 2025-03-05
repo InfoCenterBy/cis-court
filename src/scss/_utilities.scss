@@ -51,3 +51,41 @@
 .pt-180 {
   padding-top: clamp(6.25rem, 4.432rem + 9.09vw, 11.25rem);
 }
+
+.elements-styles {
+  & ul {
+    padding-left: 20px;
+    margin-bottom: 8px;
+
+    & > li {
+      position: relative;
+    }
+
+    & > li:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    & > li:before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: var(--blue);
+      border-radius: 50%;
+      left: -14px;
+      top: 8px;
+    }
+  }
+
+  & a {
+    color: var(--blue);
+    text-decoration-color: var(--black) !important;
+    transition: all 0.15s linear;
+
+    &:hover {
+      color: var(--black);
+      text-decoration-line: underline;
+      text-decoration-color: var(--black);
+    }
+  }
+}
