@@ -20,6 +20,10 @@
   &:hover {
     color: var(--blue);
   }
+
+  & b {
+    color: var(--blue);
+  }
 }
 
 .search-result-text {
@@ -29,4 +33,8 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  & b {
+    color: var(--blue);
+  }
 }
