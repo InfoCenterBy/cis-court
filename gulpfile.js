@@ -17,6 +17,7 @@ let path = {
       source_folder + "/lib/swiper.css",
       source_folder + "/lib/bootstrap.css",
       source_folder + "/lib/bootstrap-icons.css",
+      source_folder + "/lib/aos.css",
     ],
     js: [
       source_folder + "/js/script.js",
@@ -24,6 +25,7 @@ let path = {
       source_folder + "/js/slider-partners.js",
       source_folder + "/lib/bootstrap.js",
       source_folder + "/lib/swiper.js",
+      source_folder + "/lib/aos.js",
     ],
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     fonts: [
