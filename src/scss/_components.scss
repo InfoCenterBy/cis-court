@@ -456,13 +456,12 @@
 }
 
 .information-partner-img-container {
-  height: auto;
+  height: 150px;
   overflow: hidden;
   max-width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
 
   @media (max-width: 768px) {
     max-width: clamp(10rem, 4.545rem + 27.27vw, 25rem);
@@ -473,6 +472,7 @@
     transform: scale(1);
     width: 100%;
     height: auto;
+    object-fit: cover;
   }
 }
 
