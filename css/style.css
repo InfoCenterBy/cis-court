@@ -1333,7 +1333,7 @@ p {
 }
 
 .information-partner-img-container {
-  height: auto;
+  height: 150px;
   overflow: hidden;
   max-width: 300px;
   display: -webkit-box;
@@ -1345,9 +1345,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 @media (max-width: 768px) {
   .information-partner-img-container {
@@ -1362,6 +1359,8 @@ p {
           transform: scale(1);
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .information-partner-title {
