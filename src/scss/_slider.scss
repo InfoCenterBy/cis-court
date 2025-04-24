@@ -15,8 +15,35 @@
   align-items: center;
 }
 
-.default-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+// .default-slide img {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: contain;
+// }
+
+.slider-history .default-slide {
+  padding-inline: 100px;
+
+  @media (max-width: 768px) {
+    padding-inline: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-history .swiper-button-prev,
+  .slider-history .swiper-button-next {
+  top: 40%;
+  transform: translateY(-30%);
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+.slider-history .swiper-wrapper {
+  align-items: flex-start;
 }
